@@ -1,0 +1,148 @@
+body{
+    
+    background-image:url(./imagenes/background.jpg);
+    background-attachment: fixed;
+    margin:0;
+    padding:0;
+    height:100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+ 
+}
+.headerLogin{
+    
+    display:flex;
+}
+ 
+.logoWiki{ 
+   width: 50%;  
+   flex-direction:column;
+   align-items: center;  
+}
+ 
+.header{
+    background:#171E26;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 10%;
+    width: 100%;
+    padding:0em 0em 0em 0em;
+    
+}
+.logo{
+    height:100%;
+    width:6.5em;
+    
+}
+.one{
+    color:aliceblue;
+    list-style: none;   
+    color:#CEAA5B;
+    font-size:25px;
+    font-family:Sahitya;    
+    padding: 0em 2em 0em 2em;
+    border:none;
+    background:#171E26;
+    box-shadow:0 3px; 
+    align-self: flex-end;
+    
+}
+.boxPorfile{
+    color: lawngreen;
+    list-style: none;
+    font-family:Sahitya;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding:1em 1em 0em 0em;
+}
+ul{
+    list-style: none;  
+    padding:2em 1em 0em 0em;
+}
+ 
+ 
+.nameInvocador{
+    
+    flex-direction: row;
+    justify-content: space-between;
+    color:#CEAA5B;    
+    font-family:Sahitya;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+ 
+.porfile{
+    height:100%;
+    width:4em;      
+    border-radius:4em;
+   
+}   
+ 
+p{
+    color:#CEAA5B;
+    font-size:1em;
+    font-family:Sahitya;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+ 
+.buttons{
+    display:flex;
+    justify-content:space-around;
+    margin-top:2em;
+ 
+}
+select {
+width:10em;
+height:3em;
+border:none;
+background:#171E26;
+color:#CEAA5B;
+font-size:1.5em;
+font-family:Sahitya;
+padding: 0em 2em 0em 2em;  
+box-shadow:0 3px;
+ 
+}
+.buttonReg{
+  width:10em;
+  height:3em;
+  border:none;
+  background:#171E26;
+  color:#CEAA5B;
+  font-size:25px;
+  font-family:Sahitya;
+  padding: 0em 2em 0em 2em;  
+ box-shadow:0 3px;
+}
+ 
+input{
+width:10em;
+height:3em;
+border:none;
+background:#171E26;
+color:#CEAA5B;
+font-size:25px;
+font-family:Sahitya;
+padding: 0em 2em 0em 2em;
+box-shadow:0 3px;
+cursor: pointer;
+    user-select: none;
+    -webkit-appearance: none
+ 
+}
+textarea, select, input, button { 
+    outline: none;
+}
+/* //para evitar que salga cuadro azul// */
+:focus { 
+    outline-color: transparent; 
+    outline-style: none;
+}
+.hide{
+    display: none;
+}
+ 
