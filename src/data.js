@@ -1,5 +1,9 @@
-// estas funciones son de ejemplo
+export const allChampions = (arrayLOL) => {
+    
+    for (let i = 0; i < arrayLOL.length; i++) {
+    const nombre = arrayLOL[i].name;
+    contaner.innerHTML += nombre;
+}
+};
 
-export const example = () => 'example';
-
-export const anotherExample = () => 'OMG';
+// export const anotherExample = () => 'OMG';

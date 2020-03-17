@@ -408,6 +408,27 @@ esto, deberás
 [configurar](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
 un `remote` hacia el repositorio del cual hiciste el fork.
 
+Para que Marilyn me pueda compartir su información debe hacer:
+
+""Open Git Bash.
+
+List the current configured remote repository for your fork.
+
+$ git remote -v
+> origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+> origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+Specify a new remote upstream repository that will be synced with the fork.
+
+$ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+Verify the new upstream repository you've specified for your fork.
+
+$ git remote -v
+> origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+> origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+> upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
+> upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)""
+
+
 Para mandar cambios desde un repositorio forkeado al original debes crear un
 [pull request](https://goo.gl/4bYnuh)
 y el propietario del repositorio original recibirá una notificación para

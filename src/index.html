@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
+        <meta charset="utf-8">
+        <title>Campeones</title>
+        <link rel="stylesheet" href="style.css" />
+ </head>
+<body>
+ <!-- Primera vista de página -->
+ <div id="viewLogin">
+      <header >
+          <!-- <div class="headerLogin"> -->
+             <div class="wikiLol">
+                    <img src="./imagenes/wikilolfondo.png" class="logoWiki">
+                    <p>Conoce a los campeones de League Of Legends</p>    
+             </div>
+          <!-- </div> -->
+      </header>
+      <main>
+            <input id="inputName" class="inputName" placeholder="Ingrese su nombre"></input>
+            <button id="buttonEnter" class="buttonEnter" type="submit">ENTRAR</button>
+      </main>
+    </div>  
+   <!-- segunda vista de página-->
+     <div id="viewChampions" class="hide">
+        <header class="header">
+            <img src="./imagenes/logo.png" class="logo">
+            <ul class="one">
+                <a>Campeones</a>
+            </ul>
+            <div class="boxPorfile">
+                <img src="./imagenes/perfil.jpg" class="porfile">
+                <ul>
+                    <li id="nameInvocador" class="nameInvocador"></li>
+                    <li class="green">Invocador@</li>
+                </ul>    
+            </div>
+        </header>
+     <main>
+            <div class="buttons">
+                <select id="buttonFilter" class="boxFilter">
+                    <option value="a-z">A - Z</option>
+                    <option value="z-a">Z - A</option>
+                </select>
+                <button id="buttonReg" class="buttonReg">Nivel Regeneración</button>
+                <div class="search">
+                    <input id="search" type="search" placeholder="Buscar"></input>
+                </div>
+          
+            </div>
+            <!-- <section id="contaner">AQUI VAN LOS Campeones</section> -->
+ 
+            <div class="panel">
+                <p>Roles</p>
+                <button id="buttonAssassin" type="submit">1</button>
+                <button id="buttonFigther" type="submit">2</button>
+                <button id="buttonMage" type="submit">3</button>
+                <button id="buttonMarksman" type="submit">4</button>
+                <button id="buttonSupport" type="submit">5</button>
+                <button id="buttonTank" type="submit">6</button>
+            </div>
+     </main>
+    </div>
     <script src="main.js" type="module"></script>
-  </body>
+    <!-- <script type="module" src="data.js"></script> -->
+  <!-- <script type="module" src="lol.js" ></script> -->
+</body>
+
 </html>
