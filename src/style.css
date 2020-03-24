@@ -231,7 +231,7 @@ button{
 }  
 /* FALTA */
 body{ 
-    background-image:url(./imagenes/Background6.jpg); 
+    background-image:url(./imagenes/background.jpg); 
     background-attachment: fixed;
     margin:0;
     padding:0;
