@@ -1,101 +1,246 @@
-body{
-    
-    background-image:url(./imagenes/background.jpg);
-    background-attachment: fixed;
-    margin:0;
-    padding:0;
-    height:100vh;
-    background-size:cover;
-    background-repeat: no-repeat;
+.login{
+    flex-direction:column;
+    align-items: flex-start;
+    display: flex;}
 
-}
-.headerLogin{
-    
-    display:flex;
-}
- 
 .logoWiki{ 
-   width: 50%;  
-   flex-direction:column;
-   align-items: center;  
-}
- 
-.header{
+    width: 430px;  
+    padding:0em 0em 0em 0em;}
+
+h1{ 
+    color:#CEAA5B;
+    font-size:1.7em;
+    font-weight: lighter;
+    font-family:Sahitya;
+    margin-left: 1em;}  
+
+p{
+    color:#CEAA5B;
+    font-size:2.5em;
+    font-weight: bold;
+    font-family:Sahitya;
+    margin-left: 0.5em;
+    margin-top: 0em; 
+    margin-bottom: 0.7em;}
+
+#inputName{
+    width:10em;
+    height:3em;
+    border:none;
+    border-radius:0.2em;
     background:#171E26;
+    color:#CEAA5B;
+    font-size:25px;
+    font-family:Sahitya;
+    padding: 0em 2em 0em 2em;
+    box-shadow:0 3px;
+    cursor: pointer;
+    user-select: none;
+    margin-left: 0.3em;
+    cursor: pointer;
+    -webkit-appearance: none}
+
+#buttonEnter{
+    background:#CEAA5B;
+    font-family:Sahitya;
+    color:#171E26;
+    border-radius:0.5em;    
+    font-weight: bold;
+    width:10em;
+    height:5.8em;
+    border:none;
+    cursor: pointer;
+    cursor: hand;
+    margin-left: 0.5em;
+    margin-top: 0.5em;}
+
+.header{   
+    background-color: rgba(8, 8, 8, 0.5);
+    filter: alpha;
     display:flex;
-    align-items: center;
+    align-items: center;    
     justify-content:space-between;
-    height: 10%;
+    height: 4.5em;
     width: 100%;
-    padding:0em 0em 0em 0em;
+    margin: 0%;
+    padding:0.7em 0em 0.5em 0em;}
+
+nav{
+    position: fixed;
+    display:flex;
+    justify-content:space-around;
+    margin-top:0.2em;
+    border-radius:0.5em;
+    margin: 0%;
+    padding:0.5em 0em 0em 17em;}
+
+#buttonFilter {
+    width:10em;
+    height:3.5em;
+    border:none;
+    background-color: rgba(8, 8, 8, 0.5);
+    filter: alpha;
+    color:#CEAA5B;
+    font-size:16px;
+    font-family:Sahitya;
+    padding: 0em 2em 0em 2em;  
+    box-shadow:0 3px;
+    margin-left: 3em;
+    margin-right:6.5em; 
+    border-radius:0.2em;}
     
-}
+.buttonReg{
+    width:10em;
+    height:3.5em;
+    border:none;
+    background-color: rgba(8, 8, 8, 0.5);
+    filter: alpha;
+    color:#CEAA5B;
+    font-size:16px;
+    font-family:Sahitya;
+    padding: 0em 2em 0em 2em;  
+    box-shadow:0 3px;
+    margin-right:6.5em; 
+    border-radius:0.2em;}
+
+.search {
+    width:10em;
+    height:3.5em;
+    border:none;
+    background-color: rgba(8, 8, 8, 0.5);
+    filter: alpha;
+    color:#CEAA5B;
+    font-size:16px;
+    font-family:Sahitya;
+    padding: 0em 1em 0em 1em;  
+    box-shadow:0 3px;
+    margin-right:3em; 
+    border-radius:0.2em;}
+    
+aside{
+    position: fixed;
+    margin: 0%;}
+
 .logo{
-    height:100%;
-    width:6.5em;
+    margin: 1.6%;
+    height: 60%;
+    width: 40px;}
     
-}
 .one{
     color:aliceblue;
     list-style: none;   
-    color:#CEAA5B;
-    font-size:25px;
-    font-family:Sahitya;    
-    padding: 0em 2em 0em 2em;
+    color:rgb(216, 213, 223);
+    font-size:1.2em;
+    font-family:Sahitya;
+    font-weight: lighter;    
     border:none;
-    background:#171E26;
-    box-shadow:0 3px; 
-    align-self: flex-end;
-    
-}
-.boxPorfile{
-    color: lawngreen;
+    letter-spacing: 2.5pt;
+    margin: 0%;
+    padding: 0em 0em 0em 3.5em;
+    align-self: flex-end;}    
+
+.profile{
+    height:100%;
+    width:3em; 
+    margin-right: 1em;
+    border-radius:4em;} 
+
+#nameInvocador{    
+    flex-direction: row;
+    justify-content: space-between;
+    color:#CEAA5B;    
+    font-family:Sahitya;
+    font-size: 1.4em;}
+
+.boxProfile{
+    color: rgb(110, 181, 236);
     list-style: none;
     font-family:Sahitya;
     display: flex;
     flex-direction:row;
     justify-content: space-between;
     align-items: baseline;
-    padding:1em 1em 0em 0em;
-}
+    padding:0em 0em 0em 0em;}
+
 ul{
-    list-style: none;  
-    padding:2em 1em 0em 0em;
-}
- 
- 
-.nameInvocador{
+    list-style: none;
+    padding:2em 1em 0em 0em;}
+
+#buttonRol{
+    width: 85%;    
+    border: 0px;
+    cursor: pointer; cursor: hand;
+    padding: 0em 0em 0em 0.5em;
+    margin: 0%;
+    position: fixed left;} 
     
-    flex-direction: row;
-    justify-content: space-between;
-    color:#CEAA5B;    
-    font-family:Sahitya;
-    font-size: 1.3em;
-    font-weight: bold;
-}
- 
-.porfile{
-    height:100%;
-    width:4em;      
-    border-radius:4em;
-   
-}   
- 
-p{
+button{
+    background: none;}    
+
+.roles{
     color:#CEAA5B;
-    font-size:1em;
+    font-size:14px;
     font-family:Sahitya;
-    flex-direction: column;
-    justify-content: flex-end;
+    font-weight: lighter;
+    padding: 2em 1em 0.3em 1em;  
+    box-shadow:0 2px;
+    margin-left: 0em;}
+
+#panel{
+    width: 100px;
+    background-color: rgba(8, 8, 8, 0.5);
+    filter: alpha;
+    display: inline-block;
+    position: fixed;
+    padding: 0em 0em 0em 0em;
+    margin: 0%;} 
+
+#container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin:auto;
+    margin-top: 7%;}
+
+.champs{
+    display: flex;
+    margin: 1%;
+    padding: 5em 5em 5em 5em;}
+
+.splash{
+    width: 300px;
+    height: 350px;
+    border-radius:0.3em;
+    object-fit: cover; 
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
+    padding: 0em 0.8em 0em 0em;}   
+
+.nameChampions{
+    display: block;
+    margin-block-start: -2.5em;
+    margin-block-end: 0em;
+    margin-inline-start: 0em;
+    margin-inline-end: 0em;
+    color:white;
+    font-size:2em;
+    font-family:Sahitya;
+    font-weight: bold;
+    align-self: center;
+    padding: 1em 0em 1em 3.3em;
+}  
+/* FALTA */
+body{ 
+    background-image:url(./imagenes/Background6.jpg); 
+    background-attachment: fixed;
+    margin:0;
+    padding:0;
+    height:100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
  
-.buttons{
-    display:flex;
-    justify-content:space-around;
-    margin-top:2em;
- 
-}
-select {
+/* select {
 width:10em;
 height:3em;
 border:none;
@@ -103,37 +248,16 @@ background:#171E26;
 color:#CEAA5B;
 font-size:1.5em;
 font-family:Sahitya;
-padding: 0em 2em 0em 2em;  
-box-shadow:0 3px;
- 
-}
-.buttonReg{
-  width:10em;
-  height:3em;
-  border:none;
-  background:#171E26;
-  color:#CEAA5B;
-  font-size:25px;
-  font-family:Sahitya;
-  padding: 0em 2em 0em 2em;  
- box-shadow:0 3px;
-}
- 
-input{
-width:10em;
-height:3em;
-border:none;
-background:#171E26;
-color:#CEAA5B;
-font-size:25px;
-font-family:Sahitya;
 padding: 0em 2em 0em 2em;
+margin-right: 2em;  
 box-shadow:0 3px;
-cursor: pointer;
-    user-select: none;
-    -webkit-appearance: none
  
-}
+} */
+
+
+
+
+/* cambios */
 textarea, select, input, button { 
     outline: none;
 }
@@ -146,7 +270,158 @@ textarea, select, input, button {
     display: none;
 }
  
+/* CELULAR */
 
- 
- 
+@media (max-width: 768px) {
+    .header{   
+        color: #fff;
+        background-color: rgba(8, 8, 8, 0.5);
+        filter: alpha;
+        display:flex;
+        align-items: center;
+        justify-content:space-between;
+        height: 55px;
+        width: 100%;
+        margin: 0%;
+        padding:0em 0em 1em 0em;}
+    
+    .logo{
+        margin: 1.5%;
+        padding: 0em 0em 0em 0.5em;
+        height: 60%;
+        width: 30px;}
 
+    .boxProfile{
+        display: none;
+        visibility: hidden;} 
+
+    .one{   
+        color:aliceblue;
+        list-style: none;   
+        color:#CEAA5B;
+        font-size:1em;
+        font-family:Sahitya;
+        border:none;
+        padding: 0em 6em 0em 0em;
+        margin-bottom: 0.5em;}
+
+       
+    #panel{
+        width: 79px;
+        background-color: rgba(8, 8, 8, 0.5);
+        filter: alpha;
+        display: inline-block;
+        position: fixed;
+        padding: 0em 0em 4em 0em;
+        margin: 0%;} 
+
+    .roles{
+        color:#CEAA5B;
+        font-size:14px;
+        font-family:Sahitya;
+        font-weight: lighter;
+        padding: 0.85em 1.5em 1em 2em;  
+        box-shadow:0 3px;
+        margin-left: 0em;}
+    
+    #buttonRol{
+        width: 50px;    
+        border: 0px;
+        cursor: pointer; cursor: hand;
+        padding: 0em 0em 0.2em 0.5em;
+        margin: 0%;
+        position: fixed left;} 
+
+    #buttonFilter {
+        width:6em;
+        height:3em;
+        border:none;
+        color: #fff;
+        background-color: rgba(8, 8, 8, 0.5);
+        filter: alpha;
+        color:#CEAA5B;
+        font-size:14px;
+        font-family:Sahitya;
+        padding: 0em 0em 0em 1.5em;  
+        box-shadow:0 3px;
+        margin-left: 3em;
+        margin-right:0.5em; 
+        border-radius:0.2em;}
+    
+    #buttonReg {
+        width:6em;
+        height:3em;
+        border:none;
+        color: #fff;
+        background-color: rgba(8, 8, 8, 0.5);
+        filter: alpha;
+        color:#CEAA5B;
+        font-size:14px;
+        font-family:Sahitya;
+        padding: 0em 0em 0em 0em;  
+        box-shadow:0 3px;
+        margin-right:0.6em; 
+        border-radius:0.2em;}
+    
+
+    .search {
+        width:5.8em;
+        height:3em;
+        border:none;
+        border-radius:0.2em;
+        color: #fff;
+        background-color: rgba(8, 8, 8, 0.5);
+        filter: alpha;
+        color:#CEAA5B;
+        font-size:14px;
+        font-family:Sahitya;
+        padding: 0em 0em 0em 1.5em;
+        box-shadow:0 3px;
+        cursor: pointer;
+        user-select: none;
+        margin-left: 0.06em;
+        cursor: pointer;
+        -webkit-appearance: none}
+        
+    #container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin:auto;
+        margin-left: 5em;
+        margin-top: 4.5em;}
+    
+    
+    .splash{
+        width: 135px;
+        height: 157.5px;
+        border-radius:0.3em;
+        object-fit: cover; 
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
+        padding: 0em 0.2em 0em 0em;}   
+    
+    .nameChampions{
+        display: block;
+        margin-block-start: -2.5em;
+        margin-block-end: 0em;
+        margin-inline-start: 0em;
+        margin-inline-end: 0em;
+        color:white;
+        font-size:1.1em;
+        font-family:Sahitya;
+        font-weight: bold;
+        align-self: center;
+        padding: 1em 0em 1em 1.5em;
+    }  
+
+    nav{
+        position: fixed;
+        display:flex;
+        justify-content:space-around;
+        border-radius:0.5em;
+        margin: 0%;
+        padding:0em 1em 1em 3em;}
+    }
+    
+    
