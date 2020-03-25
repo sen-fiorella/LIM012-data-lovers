@@ -231,7 +231,7 @@ button{
 }  
 /* FALTA */
 body{ 
-    background-image:url(./imagenes/background.jpg); 
+    background-image:url(./imagenes/background6.jpg); 
     background-attachment: fixed;
     margin:0;
     padding:0;
@@ -240,23 +240,6 @@ body{
     background-repeat: no-repeat;
 }
  
-/* select {
-width:10em;
-height:3em;
-border:none;
-background:#171E26;
-color:#CEAA5B;
-font-size:1.5em;
-font-family:Sahitya;
-padding: 0em 2em 0em 2em;
-margin-right: 2em;  
-box-shadow:0 3px;
- 
-} */
-
-
-
-
 /* cambios */
 textarea, select, input, button { 
     outline: none;
@@ -348,41 +331,41 @@ textarea, select, input, button {
         margin-right:0.5em; 
         border-radius:0.2em;}
     
-    #buttonReg {
-        width:6em;
-        height:3em;
-        border:none;
-        color: #fff;
-        background-color: rgba(8, 8, 8, 0.5);
-        filter: alpha;
-        color:#CEAA5B;
-        font-size:14px;
-        font-family:Sahitya;
-        padding: 0em 0em 0em 0em;  
-        box-shadow:0 3px;
-        margin-right:0.6em; 
-        border-radius:0.2em;}
-    
-
-    .search {
-        width:5.8em;
-        height:3em;
-        border:none;
-        border-radius:0.2em;
-        color: #fff;
-        background-color: rgba(8, 8, 8, 0.5);
-        filter: alpha;
-        color:#CEAA5B;
-        font-size:14px;
-        font-family:Sahitya;
-        padding: 0em 0em 0em 1.5em;
-        box-shadow:0 3px;
-        cursor: pointer;
-        user-select: none;
-        margin-left: 0.06em;
-        cursor: pointer;
-        -webkit-appearance: none}
+        #buttonReg {
+            width:6em;
+            height:3em;
+            border:none;
+            color: #fff;
+            background-color: rgba(8, 8, 8, 0.5);
+            filter: alpha;
+            color:#CEAA5B;
+            font-size:14px;
+            font-family:Sahitya;
+            padding: 0em 0em 0em 0em;  
+            box-shadow:0 3px;
+            margin-right:0.6em; 
+            border-radius:0.2em;}
         
+    
+        .search {
+            width:5.8em;
+            height:3em;
+            border:none;
+            border-radius:0.2em;
+            color: #fff;
+            background-color: rgba(8, 8, 8, 0.5);
+            filter: alpha;
+            color:#CEAA5B;
+            font-size:14px;
+            font-family:Sahitya;
+            padding: 0em 0em 0em 1.5em;
+            box-shadow:0 3px;
+            cursor: pointer;
+            user-select: none;
+            margin-left: 0.06em;
+            cursor: pointer;
+            -webkit-appearance: none}
+            
     #container{
         display: flex;
         justify-content: space-around;

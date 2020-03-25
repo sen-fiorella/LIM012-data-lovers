@@ -9,6 +9,7 @@ const inputName = document.getElementById('inputName');
 const buttonEnter = document.getElementById('buttonEnter');
 let nameInvocador = document.getElementById('nameInvocador');
 const container = document.getElementById('container');
+const buttonFilter = document.getElementById('buttonFilter')
 
 //Evento que recoge el nombre del usuario al hacer click y se inserta en la siguiente vista:
 buttonEnter.addEventListener('click', () => {
@@ -33,6 +34,9 @@ const showData = (parametro) => {
     container.innerHTML = show;
 };
 showData(data);
+
+
+
 
 
 
