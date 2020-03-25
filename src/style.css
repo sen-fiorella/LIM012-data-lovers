@@ -1,5 +1,5 @@
 body{ 
-    background-image:url(./imagenes/Background6.jpg); 
+    background-image:url(./imagenes/background6.jpg); 
     background-attachment: fixed;
     margin:0;
     padding:0;
@@ -243,15 +243,6 @@ button{
     padding: 1em 0em 1em 3.3em;
 }  
 
-body{ 
-    background-image:url(./imagenes/Background6.jpg); 
-    background-attachment: fixed;
-    margin:0;
-    padding:0;
-    height:100vh;
-    background-size:cover;
-    background-repeat: no-repeat;
-}
 
 textarea, select, input, button { 
     outline: none;
