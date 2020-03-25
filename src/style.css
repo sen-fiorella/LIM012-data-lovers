@@ -63,9 +63,8 @@ p{
     margin-left: 0.5em;
     margin-top: 0.5em;}
 
-.header{   
-    color: #fff;
-    background-color: rgba(26, 40, 61, 0.5);
+    .header{   
+    background-color: rgba(8, 8, 8, 0.5);
     filter: alpha;
     display:flex;
     align-items: center;    
@@ -74,6 +73,7 @@ p{
     width: 100%;
     margin: 0%;
     padding:0.7em 0em 0.5em 0em;}
+    
 
 nav{
     position: fixed;
@@ -84,45 +84,50 @@ nav{
     margin: 0%;
     padding:0.5em 0em 0em 17em;}
 
-#buttonFilter {
+    #buttonFilter {
     width:10em;
     height:3.5em;
     border:none;
-    background:#171E26;
+    background-color: rgba(8, 8, 8, 0.5);
+    filter: alpha;
     color:#CEAA5B;
     font-size:16px;
     font-family:Sahitya;
     padding: 0em 2em 0em 2em;  
     box-shadow:0 3px;
-    margin-left: 1em;
+    margin-left: 3em;
     margin-right:6.5em; 
     border-radius:0.2em;}
-    
-.buttonReg{
+
+    .buttonReg{
     width:10em;
     height:3.5em;
     border:none;
-    background:#171E26;
+    background-color: rgba(8, 8, 8, 0.5);
+    filter: alpha;
     color:#CEAA5B;
     font-size:16px;
     font-family:Sahitya;
     padding: 0em 2em 0em 2em;  
     box-shadow:0 3px;
-    margin-right:6em; 
+    margin-right:6.5em; 
     border-radius:0.2em;}
 
-.search {
+    .search {
     width:10em;
     height:3.5em;
     border:none;
-    background:#171E26;
+    background-color: rgba(8, 8, 8, 0.5);
+    filter: alpha;
     color:#CEAA5B;
     font-size:16px;
     font-family:Sahitya;
-    padding: 0em 2em 0em 2em;  
+    padding: 0em 1em 0em 1em;  
     box-shadow:0 3px;
-    margin-right:2em; 
+    margin-right:3em; 
     border-radius:0.2em;}
+    
+    
     
 aside{
     position: fixed;
@@ -195,13 +200,13 @@ button{
 
 #panel{
     width: 100px;
-    color: #fff;
-    background-color: rgba(26, 40, 61, 0.5);
+    background-color: rgba(8, 8, 8, 0.5);
     filter: alpha;
     display: inline-block;
     position: fixed;
-    padding: 0em 0em 1em 0em;
+    padding: 0em 0em 0em 0em;
     margin: 0%;} 
+    
 
 #container{
     display: flex;
