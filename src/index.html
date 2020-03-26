@@ -6,24 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png"  href="./imagenes/logo.png" />
+  <link rel="icon" type="image/png" href="./imagenes/logo.png" />
   <title>WikiLol</title>
 </head>
 
 <body>
   <!-- Historia1 - Primera vista de página -->
-  <div id="viewLogin">
+  <div id="viewLogin" class="boxLogin">
     <section class="login">
       <img src="./imagenes/wikilol.png" class="logoWiki">
       <h1>Conoce a los campeones de</h1>
-      <p>League Of Legends</p>
+      <p>League of Legends</p>
+      <img src="./imagenes/champions.png" id="icon">
     </section>
-    <section>
+    <div class="enter">
+      <img src="./imagenes/champions2.png" id="iconChamps2">
       <input type="text" id="inputName" placeholder="Ingrese su nombre" required="Campo obligatorio"></input>
       <button id="buttonEnter" type="submit">ENTRAR</button>
-    </section>
+    </div>
   </div>
-
   <!-- segunda vista de página-->
   <div id="viewChampions" class="hide">
     <header class="header">
@@ -39,6 +40,7 @@
     </header>
     <nav>
       <select id="buttonFilter">
+        <option value="" disabled selected>Ordenar</option>
         <option value="a-z">A - Z</option>
         <option value="z-a">Z - A</option>
       </select>
@@ -50,7 +52,8 @@
     <aside id="panel">
       <p class="roles">Roles</p>
       <button id="buttonRol" title="Asesinos" type="submit"><img src="./imagenes/Assassin.png" id="buttonRol"></button>
-      <button id="buttonRol" title="Luchadores" type="submit"><img src="./imagenes/Fighter_icon.png" id="buttonRol"></button>
+      <button id="buttonRol" title="Luchadores" type="submit"><img src="./imagenes/Fighter_icon.png"
+        id="buttonRol"></button>
       <button id="buttonRol" title="Magos" type="submit"><img src="./imagenes/Mage.png" id="buttonRol"></button>
       <button id="buttonRol" title="Tiradores" type="submit"><img src="./imagenes/Marksman.png" id="buttonRol"></button>
       <button id="buttonRol" title="Apoyos" type="submit"><img src="./imagenes/Support .png" id="buttonRol"></button>
