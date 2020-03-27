@@ -1,5 +1,6 @@
 // import { allChampions } from './data.js';
 import copyLol from './data/lol/lol.js';
+import { alphabetOrder } from './data.js';
 
 const dataLol = (copyLol.data);
 // Declaramos las variables - Manipulación dinámica del DOM
@@ -9,6 +10,7 @@ const inputName = document.getElementById('inputName');
 const buttonEnter = document.getElementById('buttonEnter');
 const nameInvocador = document.getElementById('nameInvocador');
 const container = document.getElementById('container');
+const buttonOrder = document.querySelector('#buttonOrder');
 // Evento que recoge el nombre del usuario al hacer click y se inserta en la siguiente vista:
 buttonEnter.addEventListener('click', () => {
   const userName = inputName.value;
@@ -31,20 +33,9 @@ const showData = (parametro) => {
   container.innerHTML = show;
 };
 showData(data);
-// Filtrar A-Z
-buttonFilter.addEventListener('change', () => {
-  const condition = buttonFilter.value;
-  const champOrder = order(condition, data)
-  const order = (condition, property) => {
-    let showOrder = [];
-    if (condition === 'a-z') {
-      showOrder = property.sort((first, last) => {
-        return (first.name < last.name) * (-1);
-      })
-      showData(champOrder);
-      console.log(showOrder);
-      // } else {
-    }
-  };
-  return showOrder;
+// Historia 3 - Ordenar (A-Z / Z-A)
+buttonOrder.addEventListener('change', () => {
+  const valueOrder = buttonOrder.value;
+  container.innerHTML = '';
+  showData(alphabetOrder(data, valueOrder));
 });
