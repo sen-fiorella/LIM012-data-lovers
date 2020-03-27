@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
-
+    
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png"  href="./Imagenes/logo.png" />
+  <link rel="icon" type="image/png" href="./Imagenes/logo.png" />
   <title>WikiLol</title>
 </head>
 
 <body>
   <!-- Primera vista de página -->
-  <div id="viewLogin">
+  <div id="viewLogin" class="boxLogin">
     <section class="login">
       <img src="./Imagenes/wikilol.png" class="logoWiki">
       <h1>Conoce a los campeones de</h1>
       <p>League Of Legends</p>
+      <img src="./Imagenes/champions.png" class="icon">
     </section>
     <section class="enter">
+      <img src="./Imagenes/champions.png" class="iconChamps2">
       <input id="inputName" placeholder="Ingrese su nombre" required></input>
       <button id="buttonEnter" type="submit">ENTRAR</button>
     </section>
   </div>
-
   <!-- segunda vista de página-->
   <div id="viewChampions" class="hide">
     <header class="header">
@@ -32,33 +33,33 @@
       <div class="boxProfile">
         <img src="./Imagenes/perfil.jpg" class="profile">
         <ul>
-          <li id="nameInvocador" ></li>
+          <li id="nameInvocador"></li>
           <li>Invocador@</li>
         </ul>
       </div>
     </header>
-    
-      <nav>
-        <select id="buttonFilter">
-          <option value="a-z">A - Z</option>
-          <option value="z-a">Z - A</option>
-        </select>
-        <button id="buttonReg" class="buttonReg">Poder</button>
-        <div>
-          <input class="search" type="search" placeholder="Buscar"></input>
-        </div>
-      </nav>
-
-      <aside id="panel">
-        <p class="roles">Roles</p>
-        <button id="buttonRol" title="Asesinos" type="submit"><img src="./Imagenes/Assassin.png" id="buttonRol"></button>
-        <button id="buttonRol" title="Luchadores"type="submit"><img src="./Imagenes/Fighter_icon.png" id="buttonRol"></button>
-        <button id="buttonRol" title="Magos" type="submit"><img src="./Imagenes/Mage.png" id="buttonRol"></button>
-        <button id="buttonRol" title="Tiradores" type="submit"><img src="./Imagenes/Marksman.png" id="buttonRol"></button>
-        <button id="buttonRol" title="Apoyos" type="submit"><img src="./Imagenes/Support.png" id="buttonRol"></button>
-        <button id="buttonRol" title="tanques" type="submit"><img src="./Imagenes/Tank.png" id="buttonRol"></button>
-      </aside>
-      <main id="container"></main>
+    <nav>
+      <select id="buttonOrder">
+        <option value="" disabled selected>Ordenar</option>
+        <option value="a-z">A - Z</option>
+        <option value="z-a">Z - A</option>
+      </select>
+      <button id="buttonReg" class="buttonReg">Poder</button>
+      <div>
+        <input class="search" type="search" placeholder="Buscar"></input>
+      </div>
+    </nav>
+    <aside id="panel">
+      <p class="roles">Roles</p>
+      <button id="buttonRol" title="Asesinos" type="submit"><img src="./Imagenes/Assassin.png" id="buttonRol"></button>
+      <button id="buttonRol" title="Luchadores" type="submit"><img src="./Imagenes/Fighter_icon.png"
+          id="buttonRol"></button>
+      <button id="buttonRol" title="Magos" type="submit"><img src="./Imagenes/Mage.png" id="buttonRol"></button>
+      <button id="buttonRol" title="Tiradores" type="submit"><img src="./Imagenes/Marksman.png" id="buttonRol"></button>
+      <button id="buttonRol" title="Apoyos" type="submit"><img src="./Imagenes/Support .png" id="buttonRol"></button>
+      <button id="buttonRol" title="tanques" type="submit"><img src="./Imagenes/Tank.png" id="buttonRol"></button>
+    </aside>
+    <main id="container"></main>
   </div>
   <script src="main.js" type="module"></script>
   <!-- <script type="module" src="data.js"></script> -->
@@ -67,4 +68,3 @@
 </body>
 
 </html>
-

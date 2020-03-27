@@ -7,6 +7,12 @@ body{
     background-size:cover;
     background-repeat: no-repeat;
 }
+
+.boxLogin{
+    display: flex;
+    flex-direction: column;
+    padding: 0em 1em 0em 4em;
+}
 .login{
     flex-direction:column;
     align-items: flex-start;
@@ -14,7 +20,7 @@ body{
 
 .logoWiki{ 
     width: 430px;  
-    padding:0em 0em 0em 0em;}
+    padding:6.5em 0em 1.5em 0em;}
 
 h1{ 
     color:#CEAA5B;
@@ -28,13 +34,27 @@ p{
     font-size:2.5em;
     font-weight: bold;
     font-family:Sahitya;
-    margin-left: 0.5em;
-    margin-top: 0em; 
-    margin-bottom: 0.7em;}
+    margin-left: 0.7em;
+    margin-top: 0em; }
+
+.icon{
+    position: absolute;
+    margin-left:23em;
+    margin-top:2em;
+    width: 800px}
+
+.iconChamps2{
+    display: none;
+    visibility: hidden;
+    }
+
+.enter{
+    display: flex;
+    flex-direction: column;}
 
 #inputName{
-    width:10em;
-    height:3em;
+    width:7.5em; 
+    height:2.5em;
     border:none;
     border-radius:0.2em;
     background:#171E26;
@@ -45,22 +65,23 @@ p{
     box-shadow:0 3px;
     cursor: pointer;
     user-select: none;
-    margin-left: 0.3em;
+    margin-left: 1em;
     cursor: pointer;
     -webkit-appearance: none}
 
 #buttonEnter{
+    
     background:#CEAA5B;
     font-family:Sahitya;
     color:#171E26;
     border-radius:0.5em;    
     font-weight: bold;
     width:10em;
-    height:5.8em;
+    height:4em;
     border:none;
     cursor: pointer;
     cursor: hand;
-    margin-left: 0.5em;
+    margin-left: 2em;
     margin-top: 0.5em;}
 
 .header{   
@@ -84,7 +105,7 @@ nav{
     margin: 0%;
     padding:0.5em 0em 0em 17em;}
 
-#buttonFilter {
+#buttonOrder {
     width:10em;
     height:3.5em;
     border:none;
@@ -214,12 +235,8 @@ button{
     flex-wrap: wrap;
     max-width: 1000px;
     margin:auto;
-    margin-top: 7%;}
-
-.champs{
-    display: flex;
-    margin: 1%;
-    padding: 5em 5em 5em 5em;}
+    margin-top: 7%;
+    }
 
 .splash{
     width: 300px;
@@ -240,25 +257,103 @@ button{
     font-family:Sahitya;
     font-weight: bold;
     align-self: center;
-    padding: 1em 0em 1em 3.3em;
-}  
+    padding: 1em 0em 1em 3.3em;}  
 
 
 textarea, select, input, button { 
-    outline: none;
-}
-/* //para evitar que salga cuadro azul// */
+    outline: none;}
+
 :focus { 
     outline-color: transparent; 
-    outline-style: none;
-}
+    outline-style: none;}
 .hide{
     display: none;
 }
- 
 /* CELULAR */
  
 @media (max-width: 768px) {
+
+    body{
+        margin: 0%;
+        padding: 0%;
+
+    }
+
+    .boxLogin{
+        
+        padding: 0em 2em 0em 2em;
+        align-self: center;
+        
+    }
+    .login{
+        flex-direction:column;
+        align-items: flex-start;
+        display: flex;
+    }
+    
+    .logoWiki{ 
+        width: 300px;
+        padding: 3em 0em 0em 0em;}
+    
+    p{
+        font-size: 29px;
+    }
+    
+    h1{ 
+        color:#CEAA5B;
+        font-size:1.3em;
+        font-weight: lighter;
+        font-family:Sahitya;
+        margin-left: 1em;}  
+        
+    .iconChamps2{
+        width: 100px;
+        height: 100%;
+        align-self: center;
+        margin-right: 2em;
+    }
+
+    
+    .icon{
+        display: none;
+        visibility: hidden;
+    }
+    
+    .enter{
+        display: flex;
+        flex-direction: column;}
+    #inputName{
+        width:7.5em; 
+        height:2.5em;
+        border:none;
+        border-radius:0.2em;
+        background:#171E26;
+        color:#CEAA5B;
+        font-size:21px;
+        font-family:Sahitya;
+        padding: 0em 2em 0em 2em;
+        box-shadow:0 3px;
+        cursor: pointer;
+        user-select: none;
+        margin-left: 1em;
+        cursor: pointer;
+        -webkit-appearance: none}
+    
+    #buttonEnter{
+        
+        background:#CEAA5B;
+        font-family:Sahitya;
+        color:#171E26;
+        border-radius:0.5em;    
+        font-weight: bold;
+        width:8em;
+        height:3em;
+        border:none;
+        cursor: pointer;
+        cursor: hand;
+        margin-left: 7em;
+        margin-top: 0.5em;}
+
     .header{   
         color: #fff;
         background-color: rgba(8, 8, 8, 0.5);
@@ -318,7 +413,7 @@ textarea, select, input, button {
         margin: 0%;
         position: fixed left;} 
  
-    #buttonFilter {
+    #buttonOrder {
         width:6em;
         height:3em;
         border:none;
