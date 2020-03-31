@@ -5,14 +5,13 @@ body{
     padding:0;
     height:100vh;
     background-size:cover;
-    background-repeat: no-repeat;
-}
+    background-repeat: no-repeat;}
  
 .boxLogin{
     display: flex;
     flex-direction: column;
-    padding: 0em 1em 0em 4em;
-}
+    padding: 0em 1em 0em 4em;}
+
 .login{
     flex-direction:column;
     align-items: flex-start;
@@ -28,31 +27,27 @@ h1{
     font-size:1.7em;
     font-weight: lighter;
     font-family:Sahitya;
-    margin-left: 1em;}  
+    margin-left: 1em;
+    margin-bottom: 0em;}  
  
 p{
     text-shadow: 0 0 2px #CEAA5B;
     color:#CEAA5B;
-    font-size:2.5em;
-    font-weight: bold;
-    font-family:Sahitya;
+    font-size:2.6em;
+    font-family: 'Vollkorn SC', serif;
     margin-left: 0.7em;
-    margin-top: 0em; }
+    margin-top: 0em;}
  
-#icon{
+.coverPage{
     position: absolute;
     margin-left:23em;
     margin-top:2em;
     width: 800px}
  
-#iconChamps2{
-    display: none;
-    visibility: hidden;
-    }
- 
 .enter{
     display: flex;
     flex-direction: column;}
+
 #inputName{
     width:7.5em; 
     height:2.5em;
@@ -67,11 +62,9 @@ p{
     cursor: pointer;
     user-select: none;
     margin-left: 1em;
-    cursor: pointer;
     -webkit-appearance: none}
  
-#buttonEnter{
-    
+#buttonEnter{    
     background:#CEAA5B;
     font-family:Sahitya;
     color:#171E26;
@@ -94,8 +87,7 @@ p{
     height: 4.5em;
     width: 100%;
     margin: 0%;
-    padding:0.7em 0em 0.5em 0em;}
-    
+    padding:0.7em 0em 0.5em 0em;}    
  
 nav{
     position: fixed;
@@ -119,6 +111,8 @@ nav{
     box-shadow:0 3px;
     margin-left: 3em;
     margin-right:6.5em; 
+    cursor: pointer;
+    user-select: none;
     border-radius:0.2em;}
  
 .buttonReg{
@@ -132,6 +126,8 @@ nav{
     font-family:Sahitya;
     padding: 0em 2em 0em 2em;  
     box-shadow:0 3px;
+    cursor: pointer;
+    user-select: none;
     margin-right:6.5em; 
     border-radius:0.2em;}
  
@@ -144,13 +140,13 @@ nav{
     color:#CEAA5B;
     font-size:16px;
     font-family:Sahitya;
+    cursor: pointer;
+    user-select: none;
     padding: 0em 1em 0em 1em;  
     box-shadow:0 3px;
     margin-right:3em; 
-    border-radius:0.2em;}
-    
-    
-    
+    border-radius:0.2em;} 
+
 aside{
     position: fixed;
     margin: 0%;}
@@ -162,11 +158,10 @@ aside{
     
 .one{
     text-shadow: 0 0 3px #fff;
-    color:aliceblue;
     list-style: none;   
     color:rgb(216, 213, 223);
     font-size:1.2em;
-    font-family:Sahitya;
+    font-family: 'Vollkorn SC', serif;
     font-weight: lighter;    
     border:none;
     letter-spacing: 5pt;
@@ -176,16 +171,16 @@ aside{
  
 .profile{
     height:100%;
-    width:3em; 
+    width:3.5em; 
     margin-right: 1em;
     border-radius:4em;} 
  
-#nameInvocador{    
+#invocadorName{    
     flex-direction: row;
     justify-content: space-between;
     color:#CEAA5B;    
-    font-family:Sahitya;
-    font-size: 1.4em;}
+    font-family: 'Vollkorn SC', serif;
+    font-size: 1.1em;}
  
 .boxProfile{
     color: rgb(110, 181, 236);
@@ -201,12 +196,12 @@ ul{
     list-style: none;
     padding:2em 1em 0em 0em;}
  
-#buttonRol{
-    
+.buttonRol{    
     width: 85%;    
     border: 0px;
-    cursor: pointer; cursor: hand;
-    padding: 0em 0em 0em 0.5em;
+    cursor: pointer; 
+    cursor: hand;
+    padding: 0em 0em 0em 0em;
     margin: 0%;
     position: fixed left;} 
     
@@ -218,8 +213,10 @@ button{
     font-size:22px;
     font-family:Sahitya;
     font-weight: lighter;
-    padding: 2em 1em 0.3em 1em;  
-    box-shadow:0 2px;
+    padding: 1em 1em 0.3em 1em; 
+    box-shadow:  0 2px;
+    margin-right: 0em;
+    margin-bottom: 0em;
     margin-left: 0em;}
  
 #panel{
@@ -230,8 +227,7 @@ button{
     position: fixed;
     padding: 0em 0em 0em 0em;
     margin: 0%;} 
-    
- 
+
 #container{
     display: flex;
     justify-content: space-around;
@@ -239,11 +235,9 @@ button{
     max-width: 1000px;
     margin:auto;
     margin-left: 13%;
-    margin-top: 7%;
-    }
+    margin-top: 7%;}
  
 .splash{
-    
     width: 300px;
     height: 350px;
     border-radius:0.3em;
@@ -251,7 +245,7 @@ button{
     box-shadow: 10px 10px 5px 5px rgba(0,0,0,0.75); 
     padding: 0em 0.2em 0em 0em;}    
  
-.nameChampions{
+.championsName{
     text-shadow: 0 0 2px #fff;
     display: block;
     margin-block-start: -2.5em;
@@ -261,51 +255,95 @@ button{
     color:white;
     font-size:2em;
     font-family:Sahitya;
-    /* font-weight: bold; */
     align-self: center;
     padding: 1em 0em 1em 3.3em;}  
- 
- 
+     
 textarea, select, input, button { 
     outline: none;}
  
-:focus { 
-    outline-color: transparent; 
-    outline-style: none;}
 .hide{
-    display: none;
+    display: none;}
+
+.modal {
+    position: fixed;
+    z-index: 6;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);}
+  
+.modalInfo {
+    font-size: 15px;
+    padding: 0px 15px 14px 15px;
+    border-radius: 15px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    
+    text-align: center;
+    color: rgb(238, 184, 67);}
+  
+.modalContent {
+    font-size: 25px;
+    border: 1px solid hsl(0, 4%, 32%);
+    background: rgba(11, 11, 11, 0.96);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    /* height: max-content; */
+    text-align: center;
+    color: #D7AC03;
+    font-weight: 900;
+    position: absolute;
+    top: 4em;
+    bottom: 4em;
+    right: 3em;
+    left: 15em;
+    
+    /* margin: auto; */
+    padding: 0.5em;}
+
+.caracteristicas{
+    font-size: 14px;
+}    
+.close{
+    font-size: 20px;
+    padding: 0em 0em 0em 7em;
+}   
+
+.imgSplash{
+    width: 200px;
+    height: 100px;
 }
+
 /* SMARTPHONE */
  
 @media (max-width: 768px) {
  
     body{
         margin: 0%;
-        padding: 0%;
- 
-    }
+        padding: 0%;}
  
     .boxLogin{
         padding: 0em 1em 0em 2em;
-        align-self: center;
+        align-self: center;}
         
-    }
     .login{
         flex-direction:column;
         align-items: flex-start;
-        display: flex;
-    }
-    
+        display: flex;}
+        
     .logoWiki{
         margin-top: 25%; 
         width: 320px;
         padding: 3em 0em 0em 0em;}
-    
+
     p{
         text-shadow: 0 0 1.5px #fff;
-        font-size: 29px;
-    }
-    
+        font-family: 'Vollkorn SC', serif;
+        font-size: 29px;}
+        
     h1{ 
         text-shadow: 0 0 4px #fff;
         color:#CEAA5B;
@@ -313,22 +351,11 @@ textarea, select, input, button {
         font-weight: lighter;
         font-family:Sahitya;
         margin-left: 1em;}  
-        
-    #iconChamps2{
-        width: 200px;
-        height: 100%;
-        align-self: center;
-        margin-right: 2em;
-    }
- 
-    #icon{
-        display: none;
-        visibility: hidden;
-    }
-    
+
     .enter{
         display: flex;
         flex-direction: column;}
+        
     #inputName{
         width:9em; 
         height:3em;
@@ -344,7 +371,6 @@ textarea, select, input, button {
         user-select: none;
         margin-left: 2.5em;
         margin-top: 5%;
-        cursor: pointer;
         -webkit-appearance: none}
     
     #buttonEnter{
@@ -361,7 +387,11 @@ textarea, select, input, button {
         cursor: hand;
         margin-left: 6em;
         margin-top: 1em;}
- 
+
+    .coverPage{
+        display: none;
+        visibility: hidden;}
+
     .header{   
         color: #fff;
         background-color: rgba(8, 8, 8, 0.5);
@@ -369,10 +399,9 @@ textarea, select, input, button {
         display:flex;
         align-items: center;
         justify-content:space-between;
-        height: 55px;
+        height: 58px;
         width: 100%;
-        margin: 0%;
-        padding:0em 0em 1em 0em;}
+        margin: 0%;}
     
     .logo{
         margin: 1.5%;
@@ -381,20 +410,43 @@ textarea, select, input, button {
         width: 30px;}
  
     .boxProfile{
-        display: none;
-        visibility: hidden;} 
- 
-    .one{
+        color: rgb(110, 181, 236);
+        list-style: none;
+        font-family:Sahitya;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        align-items: baseline;
+        padding:0.2em 0.2em 0.2em 0em;} 
+
+    .profile{
+        height:100%;
+        width:1.6em; 
+        border-radius:4em;
+        padding: 0em 0.1em 0em 0em;} 
+        
+  .one{
         text-shadow: 0 0 3px #fff;
         color:aliceblue;
         list-style: none;   
-        color:#CEAA5B;
         font-size:1em;
-        font-family:Sahitya;
+        font-family: 'Vollkorn SC', serif;
         border:none;
-        padding: 0em 6em 0em 0em;
+        padding: 0em 0em 0em 2em;
         margin-bottom: 0.5em;}
- 
+
+    ul{
+        list-style: none;
+        font-size:0.5em;
+        padding: 0em 0em 0em 0em;
+        align-items: flex-end;}
+      
+    #invocadorName{    
+        flex-direction: row;
+        justify-content: space-between;
+        color:#CEAA5B;    
+        font-family: 'Vollkorn SC', serif;
+        font-size: 1.3em;}
        
     #panel{
         width: 79px;
@@ -410,20 +462,20 @@ textarea, select, input, button {
         font-size:14px;
         font-family:Sahitya;
         font-weight: lighter;
-        padding: 0.85em 1.5em 1em 2em;  
-        box-shadow:0 3px;
+        padding: 1em 1.5em 1em 1.5em;
+        margin-bottom: 0em;  
         margin-left: 0em;}
     
-    #buttonRol{
+    .buttonRol{
         width: 50px;    
         border: 0px;
-        cursor: pointer; cursor: hand;
+        cursor: pointer; 
+        cursor: hand;
         padding: 0em 0em 0.2em 0.5em;
         margin: 0%;
         position: fixed left;} 
  
-    #buttonOrder {
-        
+    #buttonOrder {        
         width:6em;
         height:3em;
         border:none;
@@ -437,6 +489,8 @@ textarea, select, input, button {
         box-shadow:0 3px;
         margin-left: 3em;
         margin-right:0.5em; 
+        cursor: pointer;
+        user-select: none;
         border-radius:0.2em;}
     
     #buttonReg {
@@ -447,6 +501,8 @@ textarea, select, input, button {
         background-color: rgba(8, 8, 8, 0.5);
         filter: alpha;
         color:#CEAA5B;
+        cursor: pointer;
+        user-select: none;
         font-size:14px;
         font-family:Sahitya;
         padding: 0em 0em 0em 0em;
@@ -481,8 +537,7 @@ textarea, select, input, button {
         max-width: 1000px;
         margin:auto;
         margin-left: 5em;
-        margin-top: 4.5em;}
-    
+        margin-top: 4.5em;}    
  
     .splash{
         width: 135px;
@@ -492,7 +547,7 @@ textarea, select, input, button {
         box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
         padding: 0em 0.2em 0em 0em;}   
     
-    .nameChampions{
+    .championsName{
         display: block;
         margin-block-start: -2.5em;
         margin-block-end: 0em;
@@ -503,8 +558,7 @@ textarea, select, input, button {
         font-family:Sahitya;
         font-weight: bold;
         align-self: center;
-        padding: 1em 0em 1em 1.5em;
-    }  
+        padding: 1em 0em 1em 1.5em;}
  
     nav{
         position: fixed;
@@ -515,3 +569,31 @@ textarea, select, input, button {
         padding:0em 1em 1em 3em;}
     }
  
+    .modalContent {
+        font-size: 25px;
+        border: 1px solid hsl(0, 4%, 32%);
+        background: rgba(11, 11, 11, 0.96);
+        border-radius: 5px;
+        width: 220px;
+        height: 300px;
+        /* height: max-content; */
+        text-align: center;
+        color: #D7AC03;
+        font-weight: 900;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin-right: 1.3em;
+        /* margin: auto; */
+        padding: 0.5em;}
+    
+    .caracteristicas{
+        font-size: 14px;
+    }    
+    .close{
+        font-size: 20px;
+        padding: 0em 0em 0em 7em;
+    }   
+    
