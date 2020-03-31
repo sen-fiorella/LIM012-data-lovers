@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="./Imagenes/logo.png" />
+  <link rel="icon" type="image/png" href="./Imagenes/logo.png"/>
+  <link href="https://fonts.googleapis.com/css?family=Vollkorn+SC&display=swap" rel="stylesheet">
   <title>WikiLol</title>
 </head>
 
@@ -17,11 +18,10 @@
       <img src="./Imagenes/wikilol.png" class="logoWiki">
       <h1>Conoce a los campeones de</h1>
       <p>League Of Legends</p>
-      <img src="./Imagenes/champions.png" class="icon">
+      <img src="./Imagenes/champions.png" class="covePage">
     </section>
     <section class="enter">
-      <img src="./Imagenes/champions.png" class="iconChamps2">
-      <input id="inputName" placeholder="Ingrese su nombre" required></input>
+      <input id="inputName" placeholder="Ingrese su nombre" required= "Complete este campos"></input>
       <button id="buttonEnter" type="submit">ENTRAR</button>
     </section>
   </div>
@@ -33,7 +33,7 @@
       <div class="boxProfile">
         <img src="./Imagenes/perfil.jpg" class="profile">
         <ul>
-          <li id="nameInvocador"></li>
+          <li id="invocadorName"></li>
           <li>Invocador@</li>
         </ul>
       </div>
@@ -49,17 +49,24 @@
         <input class="search" type="search" placeholder="Buscar"></input>
       </div>
     </nav>
-    <aside id="panel">
+    <aside id ="panel">
       <p class="roles">Roles</p>
-      <button id="buttonRol" title="Asesinos" type="submit"><img src="./Imagenes/Assassin.png" id="buttonRol"></button>
-      <button id="buttonRol" title="Luchadores" type="submit"><img src="./Imagenes/Fighter_icon.png"
-          id="buttonRol"></button>
-      <button id="buttonRol" title="Magos" type="submit"><img src="./Imagenes/Mage.png" id="buttonRol"></button>
-      <button id="buttonRol" title="Tiradores" type="submit"><img src="./Imagenes/Marksman.png" id="buttonRol"></button>
-      <button id="buttonRol" title="Apoyos" type="submit"><img src="./Imagenes/Support .png" id="buttonRol"></button>
-      <button id="buttonRol" title="tanques" type="submit"><img src="./Imagenes/Tank.png" id="buttonRol"></button>
+      <button id="assassin" title="Asesinos" type="submit"><img src="./Imagenes/Assassin.png" class="buttonRol"></button>
+      <button id="fighter" title="Luchadores" type="submit"><img src="./Imagenes/Fighter_icon.png" class="buttonRol"></button>
+      <button id="mage" title="Magos" type="submit"><img src="./Imagenes/Mage.png" class="buttonRol"></button>
+      <button id="marksman" title="Tiradores" type="submit"><img src="./Imagenes/Marksman.png" class="buttonRol"></button>
+      <button id="support" title="Apoyos" type="submit"><img src="./Imagenes/Support .png" class="buttonRol"></button>
+      <button id="tank" title="Tanques" type="submit"><img src="./Imagenes/Tank.png" class="buttonRol"></button>
     </aside>
-    <main id="container"></main>
+    <main id="container"></main> 
+    <div id="myModal" class="modal hide">
+      <div class="modalContent">
+        <span class="close" id="close">&times;</span>
+        <p class="caracteristicas">Información del campeón</p>
+        <div class="modalInfo" id="modalInfo">
+        </div>
+      </div>
+    </div>
   </div>
   <script src="main.js" type="module"></script>
   <!-- <script type="module" src="data.js"></script> -->
