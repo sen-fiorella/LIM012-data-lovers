@@ -18,3 +18,20 @@ export const alphabetOrder = (firstLetter, condition) => {
   }
   return result;
 };
+
+
+
+export const roleFilter = (championsRol, choseFilter) => {
+  const byFilter = championsRol.filter((obj) => {
+    const filterResult = [];
+    for (let i = 0; i < obj.tags.length; i++) {
+      if (obj.tags[i] === choseFilter) {
+        filterResult.push(obj.tags[i]);
+        return filterResult;
+      }
+    }
+    // return false;
+  });
+  return byFilter;
+};
+
