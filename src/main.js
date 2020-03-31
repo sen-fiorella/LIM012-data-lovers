@@ -1,5 +1,6 @@
 // import { allChampions } from './data.js';
 import copyLol from './data/lol/lol.js';
+
 import {
   alphabetOrder,
   roleFilter,
@@ -32,6 +33,7 @@ const showData = (parametro) => {
   let show = '';
   parametro.forEach((element) => {
     const campeones = `            
+
       <div class="champ" name="champion">
       <img src=${element.splash} class="splash"/> 
       <h1 class="championsName">${element.name} </h1>
@@ -41,6 +43,7 @@ const showData = (parametro) => {
   container.innerHTML = show;
 };
 showData(data);
+
 
 // Historia 3 - Ordenar (A-Z / Z-A)
 const buttonOrder = document.querySelector('#buttonOrder');
@@ -102,3 +105,5 @@ container.addEventListener('click', () => {
 document.getElementById('close').addEventListener('click', () => {
   document.getElementById('myModal').classList.add('hide');
 });
+
+

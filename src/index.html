@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-    
-<head>
+
+  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -28,13 +28,13 @@
   <!-- segunda vista de página-->
   <div id="viewChampions" class="hide">
     <header class="header">
-      <img src="./Imagenes/logo.png" class="logo">
+      <img src="./imagenes/logo.png" class="logo">
       <h2 class="one">CAMPEONES</h2>
       <div class="boxProfile">
-        <img src="./Imagenes/perfil.jpg" class="profile">
+        <img src="./imagenes/perfil.jpg" class="profile">
         <ul>
-          <li id="invocadorName"></li>
-          <li>Invocador@</li>
+          <li id="nameInvocador"></li>
+          <li class="blue">Invocador@</li>
         </ul>
       </div>
     </header>
@@ -46,32 +46,24 @@
       </select>
       <button id="buttonReg" class="buttonReg">Poder</button>
       <div>
-        <input class="search" type="search" placeholder="Buscar"></input>
+        <input type="search" class="search" placeholder="Buscar"></input>
       </div>
     </nav>
-    <aside id ="panel">
+    <aside id="panel">
       <p class="roles">Roles</p>
-      <button id="assassin" title="Asesinos" type="submit"><img src="./Imagenes/Assassin.png" class="buttonRol"></button>
-      <button id="fighter" title="Luchadores" type="submit"><img src="./Imagenes/Fighter_icon.png" class="buttonRol"></button>
-      <button id="mage" title="Magos" type="submit"><img src="./Imagenes/Mage.png" class="buttonRol"></button>
-      <button id="marksman" title="Tiradores" type="submit"><img src="./Imagenes/Marksman.png" class="buttonRol"></button>
-      <button id="support" title="Apoyos" type="submit"><img src="./Imagenes/Support .png" class="buttonRol"></button>
-      <button id="tank" title="Tanques" type="submit"><img src="./Imagenes/Tank.png" class="buttonRol"></button>
+      <button id="buttonRol" title="Asesinos" type="submit"><img src="./imagenes/Assassin.png" id="buttonRol"></button>
+      <button id="buttonRol" title="Luchadores" type="submit"><img src="./imagenes/Fighter_icon.png"
+        id="buttonRol"></button>
+      <button id="buttonRol" title="Magos" type="submit"><img src="./imagenes/Mage.png" id="buttonRol"></button>
+      <button id="buttonRol" title="Tiradores" type="submit"><img src="./imagenes/Marksman.png" id="buttonRol"></button>
+      <button id="buttonRol" title="Apoyos" type="submit"><img src="./imagenes/Support .png" id="buttonRol"></button>
+      <button id="buttonRol" title="Tanques" type="submit"><img src="./imagenes/Tank.png" id="buttonRol"></button>
     </aside>
-    <main id="container"></main> 
-    <div id="myModal" class="modal hide">
-      <div class="modalContent">
-        <span class="close" id="close">&times;</span>
-        <p class="caracteristicas">Información del campeón</p>
-        <div class="modalInfo" id="modalInfo">
-        </div>
-      </div>
-    </div>
+    <main id="container"></main>
   </div>
   <script src="main.js" type="module"></script>
   <!-- <script type="module" src="data.js"></script> -->
   <!-- <script type="module" src="lol.js" ></script> -->
-
 </body>
 
 </html>

@@ -1,5 +1,3 @@
-// export const example = () => 'example';
-// export const anotherExample = () => 'OMG';
 export const alphabetOrder = (firstLetter, condition) => {
   const result = firstLetter;
   if (condition === 'a-z') {
@@ -22,6 +20,7 @@ export const alphabetOrder = (firstLetter, condition) => {
 };
 
 
+
 export const roleFilter = (championsRol, choseFilter) => {
   const byFilter = championsRol.filter((obj) => {
     const filterResult = [];
@@ -35,3 +34,4 @@ export const roleFilter = (championsRol, choseFilter) => {
   });
   return byFilter;
 };
+

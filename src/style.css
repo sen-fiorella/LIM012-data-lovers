@@ -1,4 +1,5 @@
 body{ 
+
     background-image:url(./Imagenes/background6.jpg); 
     background-attachment: fixed;
     margin:0;
@@ -18,6 +19,7 @@ body{
     align-items: flex-start;
     display: flex;}
 
+
 .logoWiki{ 
     width: 430px;  
     padding:6.5em 0em 1.5em 0em;}
@@ -28,27 +30,33 @@ h1{
     font-size:1.7em;
     font-weight: lighter;
     font-family:Sahitya;
+
     margin-left: 1em;
     margin-bottom: 0em;} 
+
 
 p{
     text-shadow: 0 0 2px #CEAA5B;
     color:#CEAA5B;
     font-size:2.5em;
+
     font-family: 'Vollkorn SC', serif;
     margin-left: 0.7em;
     margin-top: 0em; }
     
 
 .covePage{
+
     position: absolute;
     margin-left:23em;
     margin-top:2em;
     width: 800px}
 
+
 .enter{
     display: flex;
     flex-direction: column;}
+
 
 #inputName{
     width:7.5em; 
@@ -64,9 +72,11 @@ p{
     cursor: pointer;
     user-select: none;
     margin-left: 1em;
+
     -webkit-appearance: none}
 
 #buttonEnter{
+
     background:#CEAA5B;
     font-family:Sahitya;
     color:#171E26;
@@ -90,7 +100,7 @@ p{
     width: 100%;
     margin: 0%;
     padding:0.7em 0em 0.5em 0em;}
-    
+
 nav{
     position: fixed;
     display:flex;
@@ -113,9 +123,11 @@ nav{
     box-shadow:0 3px;
     margin-left: 3em;
     margin-right:6.5em; 
+
     cursor: pointer;
     user-select: none;
     border-radius:0.2em;}
+
 
 .buttonReg{
     width:10em;
@@ -129,9 +141,11 @@ nav{
     padding: 0em 2em 0em 2em;  
     box-shadow:0 3px;
     margin-right:6.5em; 
+
     border-radius:0.2em;
     cursor: pointer;
     user-select: none;}
+
 
 .search {
     width:10em;
@@ -145,10 +159,11 @@ nav{
     padding: 0em 1em 0em 1em;  
     box-shadow:0 3px;
     margin-right:3em; 
+
     border-radius:0.2em;
     cursor: pointer;
     user-select: none;}
-    
+
     
     
 aside{
@@ -162,15 +177,18 @@ aside{
     
 .one{
     text-shadow: 0 0 3px #fff;
+
     list-style: none;   
     color:rgb(216, 213, 223);
     font-size:1.2em;
     font-family: 'Vollkorn SC', serif;
+
     font-weight: lighter;    
     border:none;
     letter-spacing: 5pt;
     margin: 0%;
     padding: 0em 0em 0em 7em;
+
     align-self: flex-end;} 
        
 .profile{
@@ -197,11 +215,13 @@ aside{
     align-items: baseline;
     padding:0em 0em 0em 0em;}
 
+
 ul{
     list-style: none;
     padding:2em 1em 0em 0em;}
 
 .buttonRol{
+
     width: 85%;    
     border: 0px;
     cursor: pointer; cursor: hand;
@@ -217,12 +237,14 @@ button{
     font-size:22px;
     font-family:Sahitya;
     font-weight: lighter;
+
     padding: 1em 1em 0.3em 1em; 
     box-shadow:  0 2px;
     margin-right: 0em;
     margin-bottom: 0em;
     margin-left: 0em;}
     
+
 
 #panel{
     width: 100px;
@@ -232,7 +254,6 @@ button{
     position: fixed;
     padding: 0em 0em 0em 0em;
     margin: 0%;} 
-    
 
 #container{
     display: flex;
@@ -241,18 +262,22 @@ button{
     max-width: 1000px;
     margin:auto;
     margin-left: 13%;
+
     margin-top: 7%;}
 
 .splash{
+
     width: 300px;
     height: 350px;
     border-radius:0.3em;
     object-fit: cover; 
+
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
     padding: 0em 0.2em 0em 0em;}   
 
 .championsName{
     text-shadow: 0 0 2px #fff ;
+
     display: block;
     margin-block-start: -2.5em;
     margin-block-end: 0em;
@@ -261,6 +286,7 @@ button{
     color:white;
     font-size:2em;
     font-family:Sahitya;
+
     align-self: center;
     padding: 1em 0em 1em 3.3em;}  
 
@@ -340,33 +366,77 @@ textarea, select, input, button {
     
     .logoWiki{ 
         width: 300px;
+
+    /* font-weight: bold; */
+    align-self: center;
+    padding: 1em 0em 1em 3.3em;}  
+ 
+ 
+textarea, select, input, button { 
+    outline: none;}
+ 
+:focus { 
+    outline-color: transparent; 
+    outline-style: none;}
+.hide{
+    display: none;
+}
+/* SMARTPHONE */
+ 
+@media (max-width: 768px) {
+ 
+    body{
+        margin: 0%;
+        padding: 0%;
+ 
+    }
+ 
+    .boxLogin{
+        padding: 0em 1em 0em 2em;
+        align-self: center;
+        
+    }
+    .login{
+        flex-direction:column;
+        align-items: flex-start;
+        display: flex;
+    }
+    
+    .logoWiki{
+        margin-top: 25%; 
+        width: 320px;
+
         padding: 3em 0em 0em 0em;}
     
     p{
         text-shadow: 0 0 1.5px #fff;
+
         font-family: 'Vollkorn SC', serif;
         font-size: 29px;}
     
     
     h1{ 
+
         color:#CEAA5B;
         font-size:1.3em;
         font-weight: lighter;
         font-family:Sahitya;
         margin-left: 1em;}  
         
-   
-    
+  
     .enter{
         display: flex;
         flex-direction: column;}
     #inputName{
+
         width:7.5em; 
         height:2.5em;
+
         border:none;
         border-radius:0.2em;
         background:#171E26;
         color:#CEAA5B;
+
         font-size:21px;
         font-family:Sahitya;
         padding: 0em 2em 0em 2em;
@@ -388,11 +458,13 @@ textarea, select, input, button {
         border:none;
         cursor: pointer;
         cursor: hand;
+
         margin-left: 7em;
         margin-top: 0.5em;}
     .coverPage{
         display: none;
         visibility: hidden;}
+
     .header{   
         color: #fff;
         background-color: rgba(8, 8, 8, 0.5);
@@ -400,9 +472,11 @@ textarea, select, input, button {
         display:flex;
         align-items: center;
         justify-content:space-between;
+
         height: 58px;
         width: 100%;
         margin: 0%;}
+
 
     .logo{
         margin: 1.5%;
@@ -411,6 +485,7 @@ textarea, select, input, button {
         width: 30px;}
  
     .boxProfile{
+
         color: rgb(110, 181, 236);
         list-style: none;
         font-family:Sahitya;
@@ -426,11 +501,13 @@ textarea, select, input, button {
         border-radius:4em;
         padding: 0em 0.1em 0em 0em;} 
         
+
  
     .one{
         text-shadow: 0 0 3px #fff;
         color:aliceblue;
         list-style: none;   
+
         font-size:1em;
         font-family: 'Vollkorn SC', serif;
         border:none;
@@ -442,6 +519,7 @@ textarea, select, input, button {
         font-size:0.4em;
         padding: 0em 0em 0em 0em;
         align-items: flex-end;}
+
        
     #panel{
         width: 79px;
@@ -472,6 +550,7 @@ textarea, select, input, button {
         position: fixed left;} 
  
     #buttonOrder {
+
         width:6em;
         height:3em;
         border:none;
@@ -485,10 +564,12 @@ textarea, select, input, button {
         box-shadow:0 3px;
         margin-left: 3em;
         margin-right:0.5em; 
+
         border-radius:0.2em;
         cursor: pointer; 
         cursor: hand;
         user-select: none;}
+
     
     #buttonReg {
         width:6em;
@@ -500,6 +581,7 @@ textarea, select, input, button {
         color:#CEAA5B;
         font-size:14px;
         font-family:Sahitya;
+
         padding: 0em 0em 0em 0em;  
         box-shadow:0 3px;
         margin-right:0.6em; 
@@ -533,7 +615,6 @@ textarea, select, input, button {
         margin:auto;
         margin-left: 5em;
         margin-top: 4.5em;}
-    
 
     .splash{
         width: 135px;
@@ -543,7 +624,9 @@ textarea, select, input, button {
         box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
         padding: 0em 0.2em 0em 0em;}   
     
+
     .championsName{
+
         display: block;
         margin-block-start: -2.5em;
         margin-block-end: 0em;
@@ -554,7 +637,9 @@ textarea, select, input, button {
         font-family:Sahitya;
         font-weight: bold;
         align-self: center;
+
         padding: 1em 0em 1em 1.5em;}  
+
  
     nav{
         position: fixed;
@@ -563,8 +648,10 @@ textarea, select, input, button {
         border-radius:0.5em;
         margin: 0%;
         padding:0em 1em 1em 3em;}
+
     
     
 }
+
 
 
