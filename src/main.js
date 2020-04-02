@@ -37,7 +37,7 @@ const showData = (parametro) => {
     const campeones = `            
       <div class="champ" data-id=${element.name}  name="champion">
       <img src=${element.splash} data-id=${element.name} class="splash"/> 
-      <h1 class="championsName" data-id=${element.name} >${element.name}</h1>
+      <h1 class="championsName" data-id=${element.name} >${element.name} </h1>
       </div>
     `;
     show += campeones;

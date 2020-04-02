@@ -15,48 +15,48 @@
 ***
  
 ## 1. Preámbulo
- 
+
 El MOBA League of Legends de Riot Games sigue en las primeras posiciones de los juegos free-to-play que más dinero generan, siendo las ganancias para el 2019 de 1.5 mil millones de dólares. En septiembre del 2019 [Riot Games](https://bolavip.com/gamer/Encuesta-revela-que-el-71-de-los-jugadores-de-League-of-Legends-estan-solteros-20200213-0047.html) revelaba que "cada día hay un pico de ocho millones de jugadores en simultaneo en League, que hacen de League of Legends el juego de PC más grande del mundo".
- 
+
 Para iniciarse en el juego y convertirse en **invocador@** de **League of Legends** es de vital importancia conocer y elegir a los campeones estatrégicamente con la finalidad de ganar las partidas y sobre todo divertirse. Como el universo de LOL es enorme y cuenta con más de 140 campeones,  hemos creado la aplicación **WIKILOL**, aquí podrán conocer los roles y características más importantes de todos los campeones.
- 
- 
+
+
 ## 2. Resumen del proyecto
- 
+
 Wikilol una aplicación fácil, cómoda y sencilla que le permite familiarizarse con el contenido visual del juego a l@s jugador@s principiantes que estén interesad@s en ingresar al mundo de League of Legends. 
- 
+
 Para la construcción de este proyecto se analizó al conjunto de (set) de datos facilitados y se eligieron aquellos considerados como los más importantes y útiles para que Wikilol se convierta en la mejor herramienta que pueda tener un@ invocador@ a la hora de elegir a los campeones que le ayudarán a ganar las partidas.
- 
+
 Según la investigación que realizamos para este proyecto concluimos que además de conocer las características principales, consideramos muy importante que quienes quieran iniciarse en el juego deben identificar plenamente el rol de cada uno
 de los campeones y esto lo pueden lograr gracias a Wikilol.
- 
+
 ## 3. User Experience Design
- 
+
 ### Definición del producto
 ++Documenta brevemente tu trabajo en el archivo `README.md` de tu repositorio,
 contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
 el problema (o problemas) que tiene tu usuario.++
- 
+
 ### Historias de usuario
- 
+
 Para el proceso de ideación y plasmar las historias de usuario elegidas para el desarrollo del proyecto se utilizó la plataforma **Trello**. Para ver la organización de cada historia, criterios de aceptación y definición determinada puede hacer click en siguiente enlace [Trello-DataLovers](https://trello.com/b/sr9gleii/data-lovers).
- 
+
 Las **historias de usuarios** elegidas están fundamentadas en los requerimientos del proyecto (búsqueda, ordenado, filtrado y cálculo de la data), en función de las necesidades de l@s usuari@s principiantes que quieran familiarizarse con League of Legends.
- 
+
 1. Yo como jugador principiante quiero loguearme con mi nombre para acceder al sitio web.
- 
+
 2. Yo como jugador principiante quiero ver a todos los campeones para hacer mi elección.
- 
+
 3. Yo como jugador principiante quiero seleccionar un campeón para ver sus características más importantes.
- 
+
 4. Yo como jugador quiero filtrar la lista de campeones para identificarlos por sus roles.
- 
+
 5. Yo como jugador quiero un buscador para identificar a mi campeón por nombre.
- 
+
 6. Yo como jugador quiero ordenar a los campeones de la A-Z y viceversa.
- 
+
 7. Yo como jugador quiero ver el promedio del nivel de regeneración de los campeones.
- 
+
 ++Una vez que entiendas las necesidades de tus usuarios, escribe las [Historias
 de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
 todo lo que el usuario necesita hacer/ver. Las **Historias de Usuario** deben
@@ -67,15 +67,15 @@ Criterios de Aceptación para cada una.
  
 En la medida de lo posible, termina una historia de usuario antes de pasar
 a la siguiente (Cumple con Definición de Terminado + Criterios de Aceptación).++
- 
+
 ### **Diseño de la Interfaz de Usuario**
- 
+
 #### Prototipo de baja fidelidad
- 
+
 **Primera elaboración de sketch**:
- 
+
 Los primeros prototipos fueron probados para medir su valor intuitivo respecto al maquetado y la funcionalidad. El test de usabilidad de los prototipos de baja fidelidad fueron probados con dos usuari@s principiantes de LOL (nivel 1 y nivel 12 del juego). 
- 
+
 ![0 1](https://user-images.githubusercontent.com/60791638/77876526-d49c0e00-7218-11ea-83d4-8065056ab70c.jpg)
 ![1](https://user-images.githubusercontent.com/60791638/77876669-3c525900-7219-11ea-832b-70c67080ffb5.jpeg)
 ![2](https://user-images.githubusercontent.com/60791638/77876699-4d9b6580-7219-11ea-8390-4e9e82fbd83c.jpeg)
@@ -86,57 +86,55 @@ Los primeros prototipos fueron probados para medir su valor intuitivo respecto a
 Observaciones:
 1. En el primer prototipo de login, ninguno de l@s usuari@s entiende el botón de ingreso.
 2. La usuaria que se encuentra en nivel 1 no identifica los símbolos de roles.
- 
+
 Modificacones:
 1. Se procede a realizar un segundo prototipo en baja fidelidad para subsanar el botón de ingreso.
- 
+
 ![-1](https://user-images.githubusercontent.com/60791638/77876798-98b57880-7219-11ea-8466-948ff7b6ddb2.jpg)
 ![test de usabilidad](https://user-images.githubusercontent.com/60791638/77877622-dd421380-721b-11ea-9c2b-fdc469ef2183.jpeg)
- 
+
 **Segunda elaboración prototipos en blanco y negro:**
 Para su elaboración se precisó respetar las historias de usuario elegidas, así como corregir las observaciones de l@s usuarios respecto al botón de ingreso e identificador de los botones de roles.
- 
+
 **Modificaciones:**
- 
+
 **Vista Principal (Historia 1)**
 1. Se establece un espacio para adjuntar una imagen representativa de los campeones de LOL en la página de inicio.
 2. Pagina de inicio presenta un botón de ingreso más intuitivo.
- 
- 
- 
- 
+
+
+
+
 ![1baja](https://user-images.githubusercontent.com/60791638/77878449-edf38900-721d-11ea-8679-bb2d3c6515c8.jpg)
 ![2baja](https://user-images.githubusercontent.com/60791638/77878451-ee8c1f80-721d-11ea-85ca-13ab811f8edb.jpg)
 ![3baja](https://user-images.githubusercontent.com/60791638/77878453-ef24b600-721d-11ea-981b-b36f1a6d0e4f.jpg)
 ![4baja](https://user-images.githubusercontent.com/60791638/77878454-ef24b600-721d-11ea-8d2f-6bed0a4db1ca.jpg)
 ![5baja](https://user-images.githubusercontent.com/60791638/77878455-efbd4c80-721d-11ea-8c14-8c7ac7456237.jpg)
 ![6baja](https://user-images.githubusercontent.com/60791638/77878456-f055e300-721d-11ea-9c33-eeb986c9b449.jpg)
- 
+
 #### Prototipo de alta fidelidad
- 
+
 **Prototipos en alta fidelidad:**
 El feedback nos permitió centrarnos en un diseño sencillo y fácil de entender por usuari@s principiantes, además buscamos la comodidad visual al utilizar una paleta de colores que no se aleje de valores cromáticos utilizados en el juego y en la página oficial de League of Legends. La elaboración de los prototipos se realizó en **Figma** y se puede acceder a los diseños haciendo click en el siguiente enlace [Prototipo-WikiLol](https://www.figma.com/file/NuQLNv49KWsXfNO8JCZu9y/Prototipo-Lol?node-id=0%3A1)
- 
+
 ![1alta](https://user-images.githubusercontent.com/60791638/77879171-66a71500-721f-11ea-9c40-ffb3f0f8a3d1.jpg)
 ![2alta](https://user-images.githubusercontent.com/60791638/77879162-6444bb00-721f-11ea-8785-61ce523e45f9.jpg)
 ![3alta](https://user-images.githubusercontent.com/60791638/77879164-64dd5180-721f-11ea-98fa-f3137646e221.jpg)
 ![4alta](https://user-images.githubusercontent.com/60791638/77879165-6575e800-721f-11ea-9f0c-af70da275ac5.jpg)
 ![5alta](https://user-images.githubusercontent.com/60791638/77879167-660e7e80-721f-11ea-8915-bc4ead9ae132.jpg)
 ![6alta](https://user-images.githubusercontent.com/60791638/77879170-660e7e80-721f-11ea-998d-51ea42cfb9ea.jpg)
- 
 **Diseño responsive**
 ![1responsive](https://user-images.githubusercontent.com/60791638/77880203-b5ee4500-7221-11ea-8736-e1eaa92d25ac.jpg)
 ![2responsive](https://user-images.githubusercontent.com/60791638/77880207-b686db80-7221-11ea-88df-4eb63837121f.jpg)
 ![3responsive](https://user-images.githubusercontent.com/60791638/77880209-b71f7200-7221-11ea-9c43-3209cd6089aa.jpg)
- 
- 
+
+
 ++
 Durante tu trabajo deberás haber hecho e iterado bocetos (_sketches_) de tu
 solución usando papel y lápiz. Te recomendamos tomar fotos de todas las
 iteraciones que hagas, que las subas a tu repositorio y las menciones en tu
 `README.md`.
 ++
- 
 #### Prototipo de alta fidelidad
  
 Lo siguiente es diseñar tu Interfaz de Usuario (UI por sus siglas en inglés -
@@ -158,41 +156,41 @@ Durante el reto deberás hacer _tests_ de usabilidad con distintos usuarios, y
 en base a los resultados, deberás iterar tus diseños. Cuéntanos
 qué problemas de usabilidad detectaste a través de los _tests_ y cómo los
 mejoraste en tu propuesta final.
- 
- 
- 
+
+
+
 ## 4. Objetivos de aprendizaje
- 
+
 El objetivo principal de este proyecto es que, entendiendo las necesidades de
 tus usuarios, aprendas a diseñar y construir una interfaz web donde se pueda
 visualizar y manipular data.
- 
+
 Revisa la lista y reflexiona sobre los objetivos que conseguiste en el
 proyecto anterior. Piensa en eso al decidir tu estrategia de trabajo individual
 y de equipo.
- 
+
 ### UX
- 
+
 - [x] Diseñar la aplicación pensando y entendiendo al usuario.
 - [x] Crear prototipos para obtener _feedback_ e iterar.
 - [x] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
 - [ ] Planear y ejecutar _tests_ de usabilidad.
- 
+
 ### HTML y CSS
- 
+
 - [x] Entender y reconocer por qué es importante el HTML semántico.
 - [x] Identificar y entender tipos de selectores en CSS.
 - [x] Entender como funciona `flexbox` en CSS.
 - [x] Construir tu aplicación respetando el diseño planeado (maquetación).
- 
+
 ### DOM
- 
+
 - [ ] Entender y reconocer los selectores del DOM (`querySelector` | `querySelectorAll`).
 - [x] Manejar eventos del DOM. (`addEventListener`)
 - [ ] Manipular dinámicamente el DOM. (`createElement`, `appendchild`, `innerHTML`, `value`)
- 
+
 ### Javascript
- 
+
 - [ ] Manipular arrays (`filter` | `map` | `sort` | `reduce`).
 - [x] Manipular objects (key | value).
 - [ ] Entender el uso de condicionales (`if-else` | `switch`).
@@ -201,30 +199,29 @@ y de equipo.
 - [x] Utilizar funciones (`parámetros` | `argumentos` | `valor de retorno`).
 - [x] Entender la diferencia entre tipos de datos atómicos y estructurados.
 - [x] Utilizar ES Modules (`import` | `export`).
- 
+
 ### Pruebas Unitarias (_testing_)
 - [ ] Testear funciones (funciones puras).
- 
+
 ### Git y GitHub
 - [x] Ejecutar comandos de git (`add` | `commit` | `pull` | `status` | `push`).
 - [x] Utilizar los repositorios de GitHub (`clone` | `fork` | `gh-pages`).
 - [ ] Colaborar en Github (`pull requests`).
- 
 ### Buenas prácticas de desarrollo
 - [ ] Organizar y dividir el código en módulos (Modularización).
 - [x] Utilizar identificadores descriptivos (Nomenclatura | Semántica).
 - [x] Utilizar linter para seguir buenas prácticas (ESLINT).
- 
+
 ## 4. Consideraciones generales
- 
+
 * Este proyecto se debe resolver en duplas.
 * El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
   interfaz será desplegada usando [GitHub Pages](https://pages.github.com/).
 * Tiempo para completarlo: Toma como referencia 4 semanas.
- 
+
 ## 5. Criterios de aceptación mínimos del proyecto
- 
- 
+
+
 ### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
  
 Luego de diseñar tu interfaz de usuario deberás trabajar en su implementación.
@@ -438,28 +435,28 @@ integrante **deberá hacer un fork del repositorio de su compañera**. Luego de
 esto, deberás
 [configurar](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
 un `remote` hacia el repositorio del cual hiciste el fork.
- 
+
 Para que Marilyn me pueda compartir su información debe hacer:
- 
+
 ""Open Git Bash.
- 
+
 List the current configured remote repository for your fork.
- 
+
 $ git remote -v
 > origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
 > origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
 Specify a new remote upstream repository that will be synced with the fork.
- 
+
 $ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
 Verify the new upstream repository you've specified for your fork.
- 
+
 $ git remote -v
 > origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
 > origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
 > upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
 > upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)""
- 
- 
+
+
 Para mandar cambios desde un repositorio forkeado al original debes crear un
 [pull request](https://goo.gl/4bYnuh)
 y el propietario del repositorio original recibirá una notificación para
