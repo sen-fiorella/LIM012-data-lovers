@@ -1,5 +1,3 @@
-// export const example = () => 'example';
-// export const anotherExample = () => 'OMG';
 export const alphabetOrder = (firstLetter, condition) => {
   const result = firstLetter;
   if (condition === 'a-z') {
@@ -20,18 +18,15 @@ export const alphabetOrder = (firstLetter, condition) => {
   }
   return result;
 };
-
-
 export const roleFilter = (championsRol, choseFilter) => {
   const byFilter = championsRol.filter((obj) => {
-    const filterResult = [];
-    for (let i = 0; i < obj.tags.length; i++) {
+    let filterResult = '';
+    for (let i = 0; i < obj.tags.length; i += 1) {
       if (obj.tags[i] === choseFilter) {
-        filterResult.push(obj.tags[i]);
-        return filterResult;
+        filterResult += obj.tags[i];
       }
     }
-    // return false;
+    return filterResult;
   });
   return byFilter;
 };

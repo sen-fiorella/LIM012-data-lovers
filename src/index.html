@@ -17,13 +17,14 @@
     <section class="login">
       <img src="./Imagenes/wikilol.png" class="logoWiki">
       <h1>Conoce a los campeones de</h1>
-      <p>League Of Legends</p>
-      <img src="./Imagenes/champions.png" class="covePage">
+      <p class="lol">League Of Legends</p>
+      <img src="./Imagenes/champions.png" class="coverPage">
     </section>
-    <section class="enter">
-      <input id="inputName" placeholder="Ingrese su nombre" required= "Complete este campos"></input>
+    <div class="enter">
+      <input type="text" id="inputName" placeholder="Ingrese su nickname"></input>
+      <div id= "text"></div>
       <button id="buttonEnter" type="submit">ENTRAR</button>
-    </section>
+    </div>
   </div>
   <!-- segunda vista de página-->
   <div id="viewChampions" class="hide">
@@ -62,7 +63,6 @@
     <div id="myModal" class="modal hide">
       <div class="modalContent">
         <span class="close" id="close">&times;</span>
-        <p class="caracteristicas">Información del campeón</p>
         <div class="modalInfo" id="modalInfo">
         </div>
       </div>

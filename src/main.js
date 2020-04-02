@@ -14,28 +14,32 @@ const buttonEnter = document.getElementById('buttonEnter');
 const invocadorName = document.getElementById('invocadorName');
 const container = document.getElementById('container');
 const myModal = document.getElementById('myModal');
-const modalInfo = document.getElementById('modaInfo');
-
-
+const text = document.getElementById('text');
+// const modalInfo = document.getElementById('modaInfo');
 // Historia 1
+
 // Evento que recoge el nombre del usuario al hacer click y se inserta en la siguiente vista:
 buttonEnter.addEventListener('click', () => {
-  const userName = inputName.value;
-  invocadorName.innerHTML += userName;
-  viewChampions.classList.remove('hide');
-  viewLogin.classList.add('hide');
+  if (inputName.value === '') {
+    text.innerHTML = 'Invocador@, este campo es obligatorio';
+  } else {
+    const userName = inputName.value;
+    invocadorName.innerHTML += userName;
+    viewChampions.classList.remove('hide');
+    viewLogin.classList.add('hide');
+  }
 });
-
 // Historia 2 - Muestra a los campeones (nombre e imagen)
 const data = Object.values(dataLol);
 const showData = (parametro) => {
   let show = '';
   parametro.forEach((element) => {
     const campeones = `            
-      <div class="champ" name="champion">
-      <img src=${element.splash} class="splash"/> 
-      <h1 class="championsName">${element.name} </h1>
-      </div>`;
+      <div class="champ" data-id=${element.name}  name="champion">
+      <img src=${element.splash} data-id=${element.name} class="splash"/> 
+      <h1 class="championsName" data-id=${element.name} >${element.name}</h1>
+      </div>
+    `;
     show += campeones;
   });
   container.innerHTML = show;
@@ -88,14 +92,32 @@ tank.addEventListener('click', () => {
 });
 
 // Modal
-container.addEventListener('click', () => {
-  const position = parseInt(event.target.parentElement.id - 1);
-  // se usa para la delegación de un evento, esta es la condición
-  if (event.target.parentElement.getAttribute('name') === 'champion') {
-    myModal.classList.remove('hide');
-    modalInfo.innerHTML = `
-    <p> Nombre:  ${copyLol[position].name}</p>`;
-  }
+container.addEventListener('click', (event) => {
+  // console.log(event.target.dataset.id);
+  const nombreSeleccionado = event.target.dataset.id;
+  const objCampeonSeleccionado = (dataLol[nombreSeleccionado]);
+
+  myModal.classList.remove('hide');
+  myModal.querySelector('#modalInfo').innerHTML = `
+    <p class= "modalName">${objCampeonSeleccionado.name} </p>
+   <p class="modalTitle">${objCampeonSeleccionado.title} </p>
+   <img src=${objCampeonSeleccionado.splash} class="imgSplash"/>
+   <p class="modalTags"> Rol: ${objCampeonSeleccionado.tags} </p>
+   <div class="info">
+   <p> Defensa:${objCampeonSeleccionado.info.defense} </p>
+   <p> Ataque:${objCampeonSeleccionado.info.attack} </p>
+   <p> Magia:${objCampeonSeleccionado.info.magic} </p>
+   <p> Dificultad:${objCampeonSeleccionado.info.difficulty} </p>
+   </div>
+   <div class="stats">
+   <p> Vida: ${objCampeonSeleccionado.stats.hp} </p>
+   <p> Mana: ${objCampeonSeleccionado.stats.mp} </p>
+   <p> Velocidad: ${objCampeonSeleccionado.stats.movespeed} </p>
+   <p> Ataque: ${objCampeonSeleccionado.stats.attackrange} </p>
+   </div>
+   `;
+  // smodalInfo.innerHTML = `<p>${objCampeonSeleccionado.title}</p>`
+  // console.log(event.target.id)s
 });
 
 // Evento cerrar Modal
