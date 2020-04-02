@@ -435,7 +435,6 @@ integrante **deberá hacer un fork del repositorio de su compañera**. Luego de
 esto, deberás
 [configurar](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
 un `remote` hacia el repositorio del cual hiciste el fork.
-
 Para que Marilyn me pueda compartir su información debe hacer:
 
 ""Open Git Bash.
@@ -455,7 +454,6 @@ $ git remote -v
 > origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
 > upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
 > upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)""
-
 
 Para mandar cambios desde un repositorio forkeado al original debes crear un
 [pull request](https://goo.gl/4bYnuh)
