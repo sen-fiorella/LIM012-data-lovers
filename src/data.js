@@ -20,16 +20,13 @@ export const alphabetOrder = (firstLetter, condition) => {
 };
 export const roleFilter = (championsRol, choseFilter) => {
   const byFilter = championsRol.filter((obj) => {
-    const filterResult = [];
-    for (let i = 0; i < obj.tags.length; i++) {
+    let filterResult = '';
+    for (let i = 0; i < obj.tags.length; i += 1) {
       if (obj.tags[i] === choseFilter) {
-        filterResult.push(obj.tags[i]);
-        return filterResult;
+        filterResult += obj.tags[i];
       }
     }
-    // return false;
+    return filterResult;
   });
   return byFilter;
 };
-
-

@@ -1,17 +1,18 @@
 body{ 
-    background-image:url(./imagenes/background6.jpg); 
+    background-image:url(./Imagenes/background6.jpg); 
     background-attachment: fixed;
     margin:0;
     padding:0;
     height:100vh;
     background-size:cover;
-    background-repeat: no-repeat;}
+    background-repeat: no-repeat;
+}
  
 .boxLogin{
     display: flex;
     flex-direction: column;
     padding: 0em 1em 0em 4em;}
-
+ 
 .login{
     flex-direction:column;
     align-items: flex-start;
@@ -28,16 +29,16 @@ h1{
     font-weight: lighter;
     font-family:Sahitya;
     margin-left: 1em;
-    margin-bottom: 0em;}  
+    margin-bottom: 0em;} 
  
-p{
+.lol{
     text-shadow: 0 0 2px #CEAA5B;
     color:#CEAA5B;
-    font-size:2.6em;
+    font-size:2.5em;
     font-family: 'Vollkorn SC', serif;
     margin-left: 0.7em;
-    margin-top: 0em;}
- 
+    margin-top: 0em; }
+    
 .coverPage{
     position: absolute;
     margin-left:23em;
@@ -47,9 +48,9 @@ p{
 .enter{
     display: flex;
     flex-direction: column;}
-
+ 
 #inputName{
-    width:7.5em; 
+    width:8.5em; 
     height:2.5em;
     border:none;
     border-radius:0.2em;
@@ -57,14 +58,21 @@ p{
     color:#CEAA5B;
     font-size:25px;
     font-family:Sahitya;
-    padding: 0em 2em 0em 2em;
+    padding: 0em 1em 0em 1em;
     box-shadow:0 3px;
     cursor: pointer;
     user-select: none;
     margin-left: 1em;
     -webkit-appearance: none}
- 
-#buttonEnter{    
+#text{
+    border:none;
+    color:#CEAA5B;
+    font-size:15px;
+    font-family:Sahitya;
+    padding: 0.5em 0em 0em 0em;
+    margin-left: 2em;}    
+    
+#buttonEnter{
     background:#CEAA5B;
     font-family:Sahitya;
     color:#171E26;
@@ -87,8 +95,8 @@ p{
     height: 4.5em;
     width: 100%;
     margin: 0%;
-    padding:0.7em 0em 0.5em 0em;}    
- 
+    padding:0.7em 0em 0.5em 0em;}
+    
 nav{
     position: fixed;
     display:flex;
@@ -126,10 +134,10 @@ nav{
     font-family:Sahitya;
     padding: 0em 2em 0em 2em;  
     box-shadow:0 3px;
-    cursor: pointer;
-    user-select: none;
     margin-right:6.5em; 
-    border-radius:0.2em;}
+    border-radius:0.2em;
+    cursor: pointer;
+    user-select: none;}
  
 .search {
     width:10em;
@@ -140,13 +148,13 @@ nav{
     color:#CEAA5B;
     font-size:16px;
     font-family:Sahitya;
-    cursor: pointer;
-    user-select: none;
     padding: 0em 1em 0em 1em;  
     box-shadow:0 3px;
     margin-right:3em; 
-    border-radius:0.2em;} 
-
+    border-radius:0.2em;
+    cursor: pointer;
+    user-select: none;} 
+    
 aside{
     position: fixed;
     margin: 0%;}
@@ -167,8 +175,8 @@ aside{
     letter-spacing: 5pt;
     margin: 0%;
     padding: 0em 0em 0em 7em;
-    align-self: flex-end;}    
- 
+    align-self: flex-end;} 
+       
 .profile{
     height:100%;
     width:3.5em; 
@@ -181,6 +189,7 @@ aside{
     color:#CEAA5B;    
     font-family: 'Vollkorn SC', serif;
     font-size: 1.1em;}
+    
  
 .boxProfile{
     color: rgb(110, 181, 236);
@@ -196,17 +205,17 @@ ul{
     list-style: none;
     padding:2em 1em 0em 0em;}
  
-.buttonRol{    
+.buttonRol{
     width: 85%;    
     border: 0px;
-    cursor: pointer; 
-    cursor: hand;
-    padding: 0em 0em 0em 0em;
+    cursor: pointer; cursor: hand;
+    padding: 0em 0em 0em 0.5em;
     margin: 0%;
     position: fixed left;} 
     
 button{
-    background: none;}    
+    background: none;
+    border:none}    
  
 .roles{
     color:#CEAA5B;
@@ -218,6 +227,7 @@ button{
     margin-right: 0em;
     margin-bottom: 0em;
     margin-left: 0em;}
+    
  
 #panel{
     width: 100px;
@@ -227,7 +237,8 @@ button{
     position: fixed;
     padding: 0em 0em 0em 0em;
     margin: 0%;} 
-
+    
+ 
 #container{
     display: flex;
     justify-content: space-around;
@@ -242,11 +253,11 @@ button{
     height: 350px;
     border-radius:0.3em;
     object-fit: cover; 
-    box-shadow: 10px 10px 5px 5px rgba(0,0,0,0.75); 
-    padding: 0em 0.2em 0em 0em;}    
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
+    padding: 0em 0.2em 0em 0em;}   
  
 .championsName{
-    text-shadow: 0 0 2px #fff;
+    text-shadow: 0 0 2px #fff ;
     display: block;
     margin-block-start: -2.5em;
     margin-block-end: 0em;
@@ -257,13 +268,14 @@ button{
     font-family:Sahitya;
     align-self: center;
     padding: 1em 0em 1em 3.3em;}  
-     
+ 
+ 
 textarea, select, input, button { 
     outline: none;}
  
 .hide{
     display: none;}
-
+ 
 .modal {
     position: fixed;
     z-index: 6;
@@ -272,52 +284,73 @@ textarea, select, input, button {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);}
-  
+      
 .modalInfo {
     font-size: 15px;
-    padding: 0px 15px 14px 15px;
-    border-radius: 15px;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    
-    text-align: center;
-    color: rgb(238, 184, 67);}
-  
+    padding: 0em 1.5em 0em 1.5em;
+    border-radius: 15;}
+      
 .modalContent {
     font-size: 25px;
-    border: 1px solid hsl(0, 4%, 32%);
-    background: rgba(11, 11, 11, 0.96);
+    background: #020A11;
+    display: flex;
+    flex-direction: column;
     border-radius: 5px;
-    width: 100%;
-    height: 100%;
-    /* height: max-content; */
+    width: 410px;
+    height: 560px;
     text-align: center;
-    color: #D7AC03;
-    font-weight: 900;
+    color: #CEAA5B;
+    font-family: 'Vollkorn SC', serif;
     position: absolute;
-    top: 4em;
+    top: 2.1em;
     bottom: 4em;
     right: 3em;
-    left: 15em;
-    
-    /* margin: auto; */
-    padding: 0.5em;}
-
-.caracteristicas{
-    font-size: 14px;
-}    
-.close{
-    font-size: 20px;
-    padding: 0em 0em 0em 7em;
-}   
-
-.imgSplash{
-    width: 200px;
-    height: 100px;
+    left: 18em;;
 }
-
-/* SMARTPHONE */
+.close{
+    font-size: 30px;
+    padding: 0em 0em 0em 12em;
+    position: absolute;; 
+}  
+.imgSplash{
+    width: 165px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #EAB95B; ;
+}
+.modalName{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Vollkorn SC', serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: #fff;
+    margin: 1%;
+    padding: 0.5em 0em 0em 0em;
+}
+.modalTitle{
+    display: flex;
+    flex-direction: column-reverse;
+    font-family: 'Vollkorn SC', serif;
+    font-size: 20px;
+    color: #fff;
+    margin: 1%;
+}
+.modalTags{
+    font-family: 'Vollkorn SC', serif;
+    font-size: 20px;
+    color: #fff;
+    margin: 1%;
+}
+ 
+.stats{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 2%;
+ 
+}
+    
+/* CELULAR */
  
 @media (max-width: 768px) {
  
@@ -326,52 +359,58 @@ textarea, select, input, button {
         padding: 0%;}
  
     .boxLogin{
-        padding: 0em 1em 0em 2em;
-        align-self: center;}
         
+        padding: 0em 2em 0em 2em;
+        align-self: center;}
     .login{
         flex-direction:column;
         align-items: flex-start;
         display: flex;}
-        
-    .logoWiki{
-        margin-top: 25%; 
-        width: 320px;
+    
+    .logoWiki{ 
+        width: 300px;
         padding: 3em 0em 0em 0em;}
-
-    p{
+    
+    .lol{
         text-shadow: 0 0 1.5px #fff;
         font-family: 'Vollkorn SC', serif;
         font-size: 29px;}
-        
+    
+    
     h1{ 
-        text-shadow: 0 0 4px #fff;
         color:#CEAA5B;
         font-size:1.3em;
         font-weight: lighter;
         font-family:Sahitya;
         margin-left: 1em;}  
-
+        
+   
+    
     .enter{
         display: flex;
         flex-direction: column;}
-        
     #inputName{
-        width:9em; 
-        height:3em;
+        width:7.5em; 
+        height:2.5em;
         border:none;
         border-radius:0.2em;
         background:#171E26;
         color:#CEAA5B;
-        font-size:17px;
+        font-size:21px;
         font-family:Sahitya;
-        padding: 0em 1em 0em 1em;
+        padding: 0em 2em 0em 2em;
         box-shadow:0 3px;
         cursor: pointer;
         user-select: none;
-        margin-left: 2.5em;
-        margin-top: 5%;
+        margin-left: 1em;
         -webkit-appearance: none}
+    #text{
+        border:none;
+        color:#CEAA5B;
+        font-size:15px;
+        font-family:Sahitya;
+        padding: 0.5em 0em 0em 0em;
+        margin-left: 2em;} 
     
     #buttonEnter{
         
@@ -385,13 +424,12 @@ textarea, select, input, button {
         border:none;
         cursor: pointer;
         cursor: hand;
-        margin-left: 6em;
-        margin-top: 1em;}
-
+        margin-left: 7em;
+        margin-top: 0.5em;}
+        
     .coverPage{
         display: none;
         visibility: hidden;}
-
     .header{   
         color: #fff;
         background-color: rgba(8, 8, 8, 0.5);
@@ -402,7 +440,7 @@ textarea, select, input, button {
         height: 58px;
         width: 100%;
         margin: 0%;}
-    
+ 
     .logo{
         margin: 1.5%;
         padding: 0em 0em 0em 0.5em;
@@ -418,14 +456,15 @@ textarea, select, input, button {
         justify-content: space-between;
         align-items: baseline;
         padding:0.2em 0.2em 0.2em 0em;} 
-
+ 
     .profile{
         height:100%;
         width:1.6em; 
         border-radius:4em;
         padding: 0em 0.1em 0em 0em;} 
         
-  .one{
+ 
+    .one{
         text-shadow: 0 0 3px #fff;
         color:aliceblue;
         list-style: none;   
@@ -434,19 +473,12 @@ textarea, select, input, button {
         border:none;
         padding: 0em 0em 0em 2em;
         margin-bottom: 0.5em;}
-
+ 
     ul{
         list-style: none;
-        font-size:0.5em;
+        font-size:0.4em;
         padding: 0em 0em 0em 0em;
         align-items: flex-end;}
-      
-    #invocadorName{    
-        flex-direction: row;
-        justify-content: space-between;
-        color:#CEAA5B;    
-        font-family: 'Vollkorn SC', serif;
-        font-size: 1.3em;}
        
     #panel{
         width: 79px;
@@ -465,6 +497,7 @@ textarea, select, input, button {
         padding: 1em 1.5em 1em 1.5em;
         margin-bottom: 0em;  
         margin-left: 0em;}
+ 
     
     .buttonRol{
         width: 50px;    
@@ -475,7 +508,7 @@ textarea, select, input, button {
         margin: 0%;
         position: fixed left;} 
  
-    #buttonOrder {        
+    #buttonOrder {
         width:6em;
         height:3em;
         border:none;
@@ -489,9 +522,10 @@ textarea, select, input, button {
         box-shadow:0 3px;
         margin-left: 3em;
         margin-right:0.5em; 
-        cursor: pointer;
-        user-select: none;
-        border-radius:0.2em;}
+        border-radius:0.2em;
+        cursor: pointer; 
+        cursor: hand;
+        user-select: none;}
     
     #buttonReg {
         width:6em;
@@ -501,11 +535,9 @@ textarea, select, input, button {
         background-color: rgba(8, 8, 8, 0.5);
         filter: alpha;
         color:#CEAA5B;
-        cursor: pointer;
-        user-select: none;
         font-size:14px;
         font-family:Sahitya;
-        padding: 0em 0em 0em 0em;
+        padding: 0em 0em 0em 0em;  
         box-shadow:0 3px;
         margin-right:0.6em; 
         border-radius:0.2em;}
@@ -537,7 +569,8 @@ textarea, select, input, button {
         max-width: 1000px;
         margin:auto;
         margin-left: 5em;
-        margin-top: 4.5em;}    
+        margin-top: 4.5em;}
+    
  
     .splash{
         width: 135px;
@@ -558,7 +591,7 @@ textarea, select, input, button {
         font-family:Sahitya;
         font-weight: bold;
         align-self: center;
-        padding: 1em 0em 1em 1.5em;}
+        padding: 1em 0em 1em 1.5em;}  
  
     nav{
         position: fixed;
@@ -567,33 +600,85 @@ textarea, select, input, button {
         border-radius:0.5em;
         margin: 0%;
         padding:0em 1em 1em 3em;}
-    }
  
+    .modal {
+        position: fixed;
+        z-index: 6;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);}
+              
+    .modalInfo {
+        padding: 0em 1.5em 0em 1.5em;}
+              
     .modalContent {
         font-size: 25px;
-        border: 1px solid hsl(0, 4%, 32%);
-        background: rgba(11, 11, 11, 0.96);
+        background: #020A11;
         border-radius: 5px;
-        width: 220px;
-        height: 300px;
-        /* height: max-content; */
-        text-align: center;
-        color: #D7AC03;
-        font-weight: 900;
+        width: 340px;
+        text-align: unset;
+        color: #CEAA5B;
+        font-family: 'Vollkorn SC', serif;
         position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        margin-right: 1.3em;
-        /* margin: auto; */
-        padding: 0.5em;}
-    
-    .caracteristicas{
-        font-size: 14px;
-    }    
+        top: 2.5em;
+        bottom: 4em;
+        right: 3em;
+        left: 0.5em;
+        }
     .close{
+        font-size: 30px;
+        padding: 0em 0em 0em 10em;
+        position: absolute; 
+        }  
+    .imgSplash{
+        width: 165px;
+        height: 200px;
+        object-fit: cover;
+        border: 1px solid #EAB95B;
+        margin-left: 22% ;
+        }
+    .modalName{
+        display: flex;
+        flex-direction: row;
+        font-family: 'Vollkorn SC', serif;
+        font-weight: bold;
+        font-size: 25px;
+        color: #fff;
+        margin: 1%;
+        padding: 0.5em 0em 0em 0em;
+        }
+    .modalTitle{
+        display: flex;
+        flex-direction: column-reverse;
+        font-family: 'Vollkorn SC', serif;
         font-size: 20px;
-        padding: 0em 0em 0em 7em;
-    }   
+        color: #fff;
+        margin: 1%;
+        margin-left: 16%;
+        }
+    .modalTags{
+        font-family: 'Vollkorn SC', serif;
+        font-size: 20px;
+        color: #fff;
+        margin: 1%;
+        padding: 0em 0em 0em 3.5em;
+        }
+        
+    .info{
+        font-size: 15px;
+        margin-left: 35%;
+    }
+    .stats{
+        display: flex;
+        margin-left: 0%;
+        margin-right: 0%;
+        
+    }    
     
+}
+ 
+ 
+ 
+
