@@ -3,7 +3,7 @@ import {
   roleFilter,
 } from '../src/data.js';
 
-const data = [
+const dataTest = [
   {
     name: 'Aatrox',
     tags: ['Fighter', 'Tank'],
@@ -18,33 +18,39 @@ const data = [
   },
 ];
 
-const firstOrder = [
+const dataName = [
   {
     name: 'Aatrox',
-    tags: ['Fighter', 'Tank'],
-  },
-  {
-    name: 'Diana',
-    tags: ['Fighter', 'Mage'],
   },
   {
     name: 'Zyra',
-    tags: ['Mage', 'Support'],
+  },
+  {
+    name: 'Diana',
   },
 ];
 
-const secondOrder = [
+const orderAscent = [
   {
-    name: 'Zyra',
-    tags: ['Mage', 'Support'],
+    name: 'Aatrox',
   },
   {
     name: 'Diana',
-    tags: ['Fighter', 'Mage'],
+  },
+  {
+    name: 'Zyra',
+  },
+];
+
+const orderDescent = [
+  {
+    name: 'Zyra',
+  },
+  {
+    name: 'Diana',
   },
   {
     name: 'Aatrox',
-    tags: ['Fighter', 'Tank'],
   },
 ];
 
@@ -58,18 +64,17 @@ const filterMage = [
     tags: ['Fighter', 'Mage'],
   },
 ];
-
 describe('alphabetOrder', () => {
   it('is a function', () => {
     expect(typeof alphabetOrder).toBe('function');
   });
 
   it('return sort champions from a-z', () => {
-    expect(alphabetOrder(data, 'name', 'ascendente')).toEqual(firstOrder);
+    expect(alphabetOrder(dataName, 'a-z')).toEqual(orderAscent);
   });
 
   it('return sort champions from z-a', () => {
-    expect(alphabetOrder(data, 'name', 'descendente')).toEqual(secondOrder);
+    expect(alphabetOrder(dataName, 'z-a')).toEqual(orderDescent);
   });
 });
 
@@ -79,7 +84,7 @@ describe('roleFilter', () => {
   });
 
   it('return champion filter by role', () => {
-    expect(roleFilter(data, 'Mage')).toEqual(filterMage);
+    expect(roleFilter(dataTest, 'Mage')).toEqual(filterMage);
   });
 });
 

@@ -35,9 +35,9 @@ const showData = (parametro) => {
   let show = '';
   parametro.forEach((element) => {
     const campeones = `            
-      <div class="champ" data-id=${element.name}  name="champion">
-      <img src=${element.splash} data-id=${element.name} class="splash"/> 
-      <h1 class="championsName" data-id=${element.name} >${element.name} </h1>
+      <div class="champ" data-id=${element.id}  name="champion">
+      <img src=${element.splash} data-id=${element.id} class="splash"/> 
+      <h1 class="championsName" data-id=${element.id} >${element.id} </h1>
       </div>
     `;
     show += campeones;
@@ -45,13 +45,33 @@ const showData = (parametro) => {
   container.innerHTML = show;
 };
 showData(data);
-
-// Historia 3 - Ordenar (A-Z / Z-A)
-const buttonOrder = document.querySelector('#buttonOrder');
-buttonOrder.addEventListener('change', () => {
-  const valueOrder = buttonOrder.value;
-  container.innerHTML = '';
-  showData(alphabetOrder(data, valueOrder));
+// Modal Historia 3
+container.addEventListener('click', (event) => {
+  const nombreSeleccionado = event.target.dataset.id;
+  const objCampeonSeleccionado = (dataLol[nombreSeleccionado]);
+  myModal.classList.remove('hide');
+  myModal.querySelector('#modalInfo').innerHTML = `
+    <p class= "modalName">${objCampeonSeleccionado.name} </p>
+   <p class="modalTitle">${objCampeonSeleccionado.title} </p>
+   <img src=${objCampeonSeleccionado.splash} class="imgSplash"/>
+   <p class="modalTags"> Rol: ${objCampeonSeleccionado.tags} </p>
+   <div class="info">
+   <p> Defensa:${objCampeonSeleccionado.info.defense} </p>
+   <p> Ataque:${objCampeonSeleccionado.info.attack} </p>
+   <p> Magia:${objCampeonSeleccionado.info.magic} </p>
+   <p> Dificultad:${objCampeonSeleccionado.info.difficulty} </p>
+   </div>
+   <div class="stats">
+   <p> Vida: ${objCampeonSeleccionado.stats.hp} </p>
+   <p> Mana: ${objCampeonSeleccionado.stats.mp} </p>
+   <p> Velocidad: ${objCampeonSeleccionado.stats.movespeed} </p>
+   <p> Ataque: ${objCampeonSeleccionado.stats.attackrange} </p>
+   </div>
+   `;
+});
+// Evento cerrar Modal
+document.getElementById('close').addEventListener('click', () => {
+  document.getElementById('myModal').classList.add('hide');
 });
 
 // Historia 4 - Filtrar por Roles
@@ -91,36 +111,11 @@ tank.addEventListener('click', () => {
   showData(roleFilter(data, 'Tank'));
 });
 
-// Modal
-container.addEventListener('click', (event) => {
-  // console.log(event.target.dataset.id);
-  const nombreSeleccionado = event.target.dataset.id;
-  const objCampeonSeleccionado = (dataLol[nombreSeleccionado]);
 
-  myModal.classList.remove('hide');
-  myModal.querySelector('#modalInfo').innerHTML = `
-    <p class= "modalName">${objCampeonSeleccionado.name} </p>
-   <p class="modalTitle">${objCampeonSeleccionado.title} </p>
-   <img src=${objCampeonSeleccionado.splash} class="imgSplash"/>
-   <p class="modalTags"> Rol: ${objCampeonSeleccionado.tags} </p>
-   <div class="info">
-   <p> Defensa:${objCampeonSeleccionado.info.defense} </p>
-   <p> Ataque:${objCampeonSeleccionado.info.attack} </p>
-   <p> Magia:${objCampeonSeleccionado.info.magic} </p>
-   <p> Dificultad:${objCampeonSeleccionado.info.difficulty} </p>
-   </div>
-   <div class="stats">
-   <p> Vida: ${objCampeonSeleccionado.stats.hp} </p>
-   <p> Mana: ${objCampeonSeleccionado.stats.mp} </p>
-   <p> Velocidad: ${objCampeonSeleccionado.stats.movespeed} </p>
-   <p> Ataque: ${objCampeonSeleccionado.stats.attackrange} </p>
-   </div>
-   `;
-  // smodalInfo.innerHTML = `<p>${objCampeonSeleccionado.title}</p>`
-  // console.log(event.target.id)s
-});
-
-// Evento cerrar Modal
-document.getElementById('close').addEventListener('click', () => {
-  document.getElementById('myModal').classList.add('hide');
+// Historia 6 - Ordenar (A-Z / Z-A)
+const buttonOrder = document.querySelector('#buttonOrder');
+buttonOrder.addEventListener('change', () => {
+  const valueOrder = buttonOrder.value;
+  container.innerHTML = '';
+  showData(alphabetOrder(data, valueOrder));
 });

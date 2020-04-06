@@ -18,6 +18,7 @@ export const alphabetOrder = (firstLetter, condition) => {
   }
   return result;
 };
+// Filter
 export const roleFilter = (championsRol, choseFilter) => {
   const byFilter = championsRol.filter((obj) => {
     let filterResult = '';
