@@ -1,6 +1,7 @@
 // import { allChampions } from './data.js';
 import copyLol from './data/lol/lol.js';
 import {
+
   alphabetOrder,
   roleFilter,
 } from './data.js';
@@ -15,9 +16,9 @@ const invocadorName = document.getElementById('invocadorName');
 const container = document.getElementById('container');
 const myModal = document.getElementById('myModal');
 const text = document.getElementById('text');
+const search = document.getElementById('search');
 // const modalInfo = document.getElementById('modaInfo');
 // Historia 1
-
 // Evento que recoge el nombre del usuario al hacer click y se inserta en la siguiente vista:
 buttonEnter.addEventListener('click', () => {
   if (inputName.value === '') {
@@ -45,6 +46,14 @@ const showData = (parametro) => {
   container.innerHTML = show;
 };
 showData(data);
+// HU filtrado por nombre
+search.addEventListener('keyup', (event) => {
+  const term = event.target.value.toLowerCase();
+ const filterByName = data.filter
+});
+
+
+
 // Modal Historia 3
 container.addEventListener('click', (event) => {
   const nombreSeleccionado = event.target.dataset.id;
@@ -110,7 +119,6 @@ tank.addEventListener('click', () => {
   container.innerHTML = '';
   showData(roleFilter(data, 'Tank'));
 });
-
 
 // Historia 6 - Ordenar (A-Z / Z-A)
 const buttonOrder = document.querySelector('#buttonOrder');
