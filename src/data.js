@@ -31,3 +31,5 @@ export const roleFilter = (championsRol, choseFilter) => {
   });
   return byFilter;
 };
+// Buscar
+export const namFilt = (data, term) => data.filter(({ name }) => name.toLowerCase().includes(term));

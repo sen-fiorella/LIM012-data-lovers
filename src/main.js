@@ -1,7 +1,7 @@
 // import { allChampions } from './data.js';
 import copyLol from './data/lol/lol.js';
 import {
-
+  namFilt,
   alphabetOrder,
   roleFilter,
 } from './data.js';
@@ -46,14 +46,6 @@ const showData = (parametro) => {
   container.innerHTML = show;
 };
 showData(data);
-// HU filtrado por nombre
-search.addEventListener('keyup', (event) => {
-  const term = event.target.value.toLowerCase();
- const filterByName = data.filter
-});
-
-
-
 // Modal Historia 3
 container.addEventListener('click', (event) => {
   const nombreSeleccionado = event.target.dataset.id;
@@ -118,6 +110,18 @@ const tank = document.getElementById('tank');
 tank.addEventListener('click', () => {
   container.innerHTML = '';
   showData(roleFilter(data, 'Tank'));
+});
+
+// Historia 5 - Buscar
+const cleanContainer = () => {
+  container.innerHTML = '';
+  return false;
+};
+search.addEventListener('keyup', (event) => {
+  const term = event.target.value.toLowerCase();
+  const filterChampions = namFilt(data, term);
+  cleanContainer();
+  showData(filterChampions);
 });
 
 // Historia 6 - Ordenar (A-Z / Z-A)
