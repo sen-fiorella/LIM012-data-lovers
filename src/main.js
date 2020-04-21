@@ -1,9 +1,11 @@
 // import { allChampions } from './data.js';
 import copyLol from './data/lol/lol.js';
 import {
+  namFilt,
   alphabetOrder,
   roleFilter,
 } from './data.js';
+
 
 const dataLol = (copyLol.data);
 // Declaramos las variables - Manipulación dinámica del DOM
@@ -15,6 +17,8 @@ const invocadorName = document.getElementById('invocadorName');
 const container = document.getElementById('container');
 const myModal = document.getElementById('myModal');
 const text = document.getElementById('text');
+const search = document.getElementById('search');
+
 // const modalInfo = document.getElementById('modaInfo');
 // Historia 1
 // Evento que recoge el nombre del usuario al hacer click y se inserta en la siguiente vista:
@@ -116,4 +120,15 @@ buttonOrder.addEventListener('change', () => {
   const valueOrder = buttonOrder.value;
   container.innerHTML = '';
   showData(alphabetOrder(data, valueOrder));
+});
+// Historia 5 - Buscar
+const cleanContainer = () => {
+  container.innerHTML = '';
+  return false;
+};
+search.addEventListener('keyup', (event) => {
+  const term = event.target.value.toLowerCase();
+  const filterChampions = namFilt(data, term);
+  cleanContainer();
+  showData(filterChampions);
 });

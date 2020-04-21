@@ -1,16 +1,25 @@
 import {
+  namFilt,
   alphabetOrder,
   roleFilter,
 } from '../src/data.js';
 
 const dataTest = [
   {
-    name: 'Aatrox',
-    tags: ['Fighter', 'Tank'],
+    name: 'Ahri',
+    tags: ['Mage', 'Assassin'],
   },
   {
-    name: 'Zyra',
-    tags: ['Mage', 'Support'],
+    name: 'Akali',
+    tags: ['Assassin'],
+  },
+  {
+    name: 'Nunu',
+    tags: ['Fighter', 'Support'],
+  },
+  {
+    name: 'Zac',
+    tags: ['Tank', 'Fighter'],
   },
   {
     name: 'Diana',
@@ -20,10 +29,16 @@ const dataTest = [
 
 const dataName = [
   {
-    name: 'Aatrox',
+    name: 'Ahri',
   },
   {
-    name: 'Zyra',
+    name: 'Akali',
+  },
+  {
+    name: 'Nunu',
+  },
+  {
+    name: 'Zac',
   },
   {
     name: 'Diana',
@@ -32,38 +47,59 @@ const dataName = [
 
 const orderAscent = [
   {
-    name: 'Aatrox',
+    name: 'Ahri',
+  },
+  {
+    name: 'Akali',
   },
   {
     name: 'Diana',
   },
   {
-    name: 'Zyra',
+    name: 'Nunu',
+  },
+  {
+    name: 'Zac',
   },
 ];
-
 const orderDescent = [
   {
-    name: 'Zyra',
+    name: 'Zac',
+  },
+  {
+    name: 'Nunu',
   },
   {
     name: 'Diana',
   },
   {
-    name: 'Aatrox',
+    name: 'Akali',
+  },
+  {
+    name: 'Ahri',
   },
 ];
 
 const filterMage = [
   {
-    name: 'Zyra',
-    tags: ['Mage', 'Support'],
+    name: 'Ahri',
+    tags: ['Mage', 'Assassin'],
   },
   {
     name: 'Diana',
     tags: ['Fighter', 'Mage'],
   },
 ];
+
+const searchChamp = [
+  {
+    name: 'Ahri',
+  },
+  {
+    name: 'Akali',
+  },
+];
+
 describe('alphabetOrder', () => {
   it('is a function', () => {
     expect(typeof alphabetOrder).toBe('function');
@@ -85,5 +121,14 @@ describe('roleFilter', () => {
 
   it('return champion filter by role', () => {
     expect(roleFilter(dataTest, 'Mage')).toEqual(filterMage);
+  });
+});
+
+describe('namFilt', () => {
+  it('is a function', () => {
+    expect(typeof namFilt).toBe('function');
+  });
+  it('return champion filter by first letter A', () => {
+    expect(namFilt(dataName, 'name', 'A')).toEqual(searchChamp);
   });
 });
