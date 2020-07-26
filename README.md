@@ -36,9 +36,9 @@ El MOBA League of Legends de Riot Games sigue en las primeras posiciones de los 
 
 Para iniciarse en el juego y convertirse en **invocador@** de **League of Legends** es de vital importancia conocer y elegir a los campeones estratégicamente, esto con la finalidad de ganar las partidas y sobre todo divertirse. Como el universo de LOL es enorme y cuenta con más de 140 campeones,  hemos creado la aplicación **WIKILOL**, aquí podrán conocer los roles y características más importantes de todos los campeones.
 
-**Sondeo:**
+**Survey:**
 
-El sondeo fue realizado el 10/03/2020 a un total de 5 personas entre 15 y 25 años, 2 mujeres y 3 varones.
+La encuesta fue realizada el 10/03/2020 a un total de 5 personas entre 15 y 25 años, 2 mujeres y 3 varones.
 
 ### II. Síntesis y definición
 Hallazgos del **sondeo**.
