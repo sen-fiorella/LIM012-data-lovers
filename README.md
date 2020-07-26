@@ -38,7 +38,7 @@ Para iniciarse en el juego y convertirse en **invocador@** de **League of Legend
 
 **Sondeo:**
 
-El sondeo fue realizado el 10/03/2020 a un total de 5 personas entre 15 y 30 años, 2 mujeres y 3 varones.
+El sondeo fue realizado el 10/03/2020 a un total de 5 personas entre 15 y 25 años, 2 mujeres y 3 varones.
 
 ### II. Síntesis y definición
 Hallazgos del **sondeo**.
